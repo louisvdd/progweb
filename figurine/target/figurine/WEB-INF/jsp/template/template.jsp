@@ -107,6 +107,7 @@
 		</header>
 		<div>
 			<tiles:insertAttribute name="main-content"/>
+			Bonjour
 		</div>
 		
 				
