@@ -10,45 +10,73 @@
 	</head>
 	
 	<body>
-		<div class="input-field col s6">
-          <input id="last_name" type="text" class="validate">
-          <label for="last_name"><spring:message code="lastName"/></label>
-        </div>
-        
-        <div class="input-field col s6">
-          <input id="last_name" type="text" class="validate">
-          <label for="last_name"><spring:message code="firstName"/></label>
-        </div>
-        
-        <div class="input-field col s6">
-          <input id="last_name" type="text" class="validate">
-          <label for="last_name"><spring:message code="password"/></label>
-        </div>
-        
-        <div class="input-field col s6">
-          <input id="last_name" type="text" class="validate">
-          <label for="last_name"><spring:message code="street"/></label>
-        </div>
-        
-        <div class="input-field col s6">
-          <input id="last_name" type="text" class="validate">
-          <label for="last_name"><spring:message code="postalCode"/></label>
-        </div>
-        
-        <div class="input-field col s6">
-          <input id="last_name" type="text" class="validate">
-          <label for="last_name"><spring:message code="country"/></label>
-        </div>
-        
-        <div class="input-field col s6">
-          <input id="last_name" type="text" class="validate">
-          <label for="last_name"><spring:message code="email"/></label>
-        </div>
-        
-        <div class="input-field col s6">
-          <input id="last_name" type="text" class="validate">
-          <label for="last_name"><spring:message code="password"/></label>
-        </div>
+	<div class="container">
+
+		  <ul class="collapsible" data-collapsible="accordion">
+		    <li>
+		      <div class="collapsible-header"><i class="material-icons">filter_drama</i><spring:message code="connection"/></div>
+		      <div class="collapsible-body">
+		      	<div class="input-field col s6">
+		          <input id="last_name" type="text" class="validate">
+		          <label for="last_name"><spring:message code="userName"/></label>
+		        </div>
+			
+				<div class="input-field col s6">
+		          <input id="last_name" type="text" class="validate">
+		          <label for="last_name"><spring:message code="password"/></label>
+		        </div>
+		      </div>
+		    </li>
+		    <li>
+		      <div class="collapsible-header"><i class="material-icons">place</i><spring:message code="registration"/></div>
+		      <div class="collapsible-body">
+		      	<div class="input-field col s6">
+		          <input id="last_name" type="text" class="validate">
+		          <label for="last_name"><spring:message code="lastName"/></label>
+		        </div>
+		        
+		        <div class="input-field col s6">
+		          <input id="last_name" type="text" class="validate">
+		          <label for="last_name"><spring:message code="firstName"/></label>
+		        </div>
+		        
+		        <div class="input-field col s6">
+		          <input id="last_name" type="text" class="validate">
+		          <label for="last_name"><spring:message code="password"/></label>
+		        </div>
+		        
+		        <div class="input-field col s6">
+		          <input id="last_name" type="text" class="validate">
+		          <label for="last_name"><spring:message code="street"/></label>
+		        </div>
+		        
+		        <div class="input-field col s6">
+		          <input id="last_name" type="text" class="validate">
+		          <label for="last_name"><spring:message code="postalCode"/></label>
+		        </div>
+		        
+		        <div class="input-field col s6">
+		          <input id="last_name" type="text" class="validate">
+		          <label for="last_name"><spring:message code="country"/></label>
+		        </div>
+		        
+		        <div class="input-field col s6">
+		          <input id="last_name" type="text" class="validate">
+		          <label for="last_name"><spring:message code="email"/></label>
+		        </div>
+		        
+		        <div class="input-field col s6">
+		          <input id="last_name" type="text" class="validate">
+		          <label for="last_name"><spring:message code="password"/></label>
+		        </div>
+		      </div>
+		    </li>
+		  </ul>
+          
+        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+		   	<i class="material-icons right">send</i>
+		</button>
+    </div>
 	</body>
 	
 </html>

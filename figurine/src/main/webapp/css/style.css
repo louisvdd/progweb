@@ -16,3 +16,8 @@ main
    	flex: 1 0 auto;
 }
 
+
+div
+{
+	padding : 0px 10px 0px 10px;
+}

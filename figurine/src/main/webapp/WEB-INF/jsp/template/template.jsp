@@ -58,7 +58,7 @@
 				 	</a>
 				 	<ul class="right hide-on-med-and-down">
 				 		<li>
-				 			<a class="nav-btn waves-effect waves-light" href="#">
+				 			<a class="nav-btn waves-effect waves-light" href="welcome">
 				 				<spring:message code="reception"/>
 							</a>
 				 		</li>
@@ -115,7 +115,7 @@
 				<div class="row">
 					<div class="col l6 s12">
 						<h5>Le site de Damien et Louis</h5>
-						<p>Techniquement on peut écire un truc ici</p>
+						<p>Techniquement on peut ï¿½cire un truc ici</p>
 					</div>
 					<div class="col l4 offset-l2 s12">
 						<h5 class="black-text">Links</h5>
@@ -129,7 +129,7 @@
 			
 		<div class="footer-copyright">
             <div class="container">
-	            © 2016 Copyright Henallux LouisDamien
+	            ï¿½ 2016 Copyright Henallux LouisDamien
 	            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
             </div>
           </div>

@@ -11,10 +11,9 @@
 	
 	<body>
 	<div class="container">
-		<div class="row">
-			<div class="col l6 s12">				
+		<div class="row">				
 				<spring:message code="receptionMessage"/>
-			</div>
+				<h1>Alors Louis, on travaille?</h1>
 		</div>
 	</div>
 	</body>

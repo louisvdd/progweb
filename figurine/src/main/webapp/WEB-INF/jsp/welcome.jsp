@@ -10,13 +10,9 @@
 	</head>
 	
 	<body>
-	<div class="container">
-		<div class="row">
-			<div class="col l6 s12">				
-				<spring:message code="receptionMessage"/>
-				<h1>Alors Louis, on travaille?</h1>
-			</div>
-		</div>
+	<div class="container">			
+		<spring:message code="receptionMessage"/>
+		<h1>Alors Louis, on travaille?</h1>
 	</div>
 	</body>
 	

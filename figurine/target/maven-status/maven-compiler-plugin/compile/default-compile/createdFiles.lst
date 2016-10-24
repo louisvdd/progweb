@@ -7,6 +7,7 @@ com\spring\henallux\controller\WelcomeController.class
 com\spring\henallux\model\User.class
 com\spring\henallux\config\TilesConfig.class
 com\spring\henallux\model\Promotion.class
+com\spring\henallux\controller\RegistrationController.class
 com\spring\henallux\model\Basket.class
 com\spring\henallux\model\Movie.class
 com\spring\henallux\model\Order.class
