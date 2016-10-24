@@ -10,8 +10,12 @@
 	</head>
 	
 	<body>
+	
 	<div class="container">
-
+		<div class="imageClass">
+			<img src ='<spring:url value="/images/connection.png"/>'/>
+		</div> 
+	
 		  <ul class="collapsible" data-collapsible="accordion">
 		    <li>
 		      <div class="collapsible-header"><i class="material-icons">filter_drama</i><spring:message code="connection"/></div>
@@ -25,7 +29,12 @@
 		          <input id="last_name" type="text" class="validate">
 		          <label for="last_name"><spring:message code="password"/></label>
 		        </div>
+		        
+		        <button class="btn waves-effect waves-light" type="submit" name="action">
+		        	<spring:message code="connection"/>
+  				</button>
 		      </div>
+		  
 		    </li>
 		    <li>
 		      <div class="collapsible-header"><i class="material-icons">place</i><spring:message code="registration"/></div>
@@ -69,13 +78,17 @@
 		          <input id="last_name" type="text" class="validate">
 		          <label for="last_name"><spring:message code="password"/></label>
 		        </div>
+		        
+		        
+				<button class="btn waves-effect waves-light" type="submit" name="action">
+					<spring:message code="validate"/>
+				  	<i class="material-icons right">send</i>
+				</button>
+        
 		      </div>
 		    </li>
-		  </ul>
-          
-        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-		   	<i class="material-icons right">send</i>
-		</button>
+		  </ul> 
+		        
     </div>
 	</body>
 	

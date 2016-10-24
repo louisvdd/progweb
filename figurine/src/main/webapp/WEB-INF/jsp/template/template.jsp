@@ -5,8 +5,8 @@
 <html>
 
 	<head>
-		<meta http-equiv="Content-Type" content="type=text/html; charset=UTF-8">
-		
+		<meta http-equiv="Content-type" content="type=text/html; charset=UTF-8"/>
+
 		<link type="text/css" href="<spring:url value='/css/materialize.css/'/>" 
 				rel="Stylesheet">
 		<link type="text/css" href="<spring:url value='/css/style.css/'/>" 
@@ -64,13 +64,17 @@
 				 		</li>
 				 		<li>
 				 			<li>
-					 			<a class="dropdown-button" href="#!" data-activates="dropdownFigurine">
+					 			<a class="dropdown-button" href="#!" data-activates="dropdownFigurine" data-beloworigin="true">
 						 			<spring:message code="figurine"/>
 						 			<i class="material-icons right">arrow_drop_down</i>
 					 			</a>
 				 			</li>	
 						</li>
-				 		<li><a class="nav-btn waves-effect waves-light" href="#">Assistance</a></li>
+				 		<li>
+				 			<a class="nav-btn waves-effect waves-light" href="#">
+				 			<spring:message code="basket"/>
+				 			</a>
+				 		</li>
 				 		<li>
 					 		<form>
 						        <div class="input-field">
@@ -129,7 +133,7 @@
 			
 		<div class="footer-copyright">
             <div class="container">
-	            � 2016 Copyright Henallux LouisDamien
+	            2016 Copyright Henallux LouisDamien
 	            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
             </div>
           </div>
