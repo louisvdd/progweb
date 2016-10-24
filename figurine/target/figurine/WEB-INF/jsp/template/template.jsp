@@ -1,12 +1,13 @@
 <%@ include file="../include/importTags.jsp"%>
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
+<%@ page pageEncoding="UTF-8" %>
 
 <!DOCTYPE HTML>
 <html>
 
 	<head>
-		<meta http-equiv="Content-Type" content="type=text/html; charset=UTF-8">
-		
+		<meta http-equiv="Content-type" content="type=text/html; charset=UTF-8"/>
+
 		<link type="text/css" href="<spring:url value='/css/materialize.css/'/>" 
 				rel="Stylesheet">
 		<link type="text/css" href="<spring:url value='/css/style.css/'/>" 
@@ -23,17 +24,17 @@
 		<!-- DropDown figurine structure -->
 		<ul id="dropdownFigurine" class="dropdown-content">
 		  <li>
-		  	<a href="#!">
+		  	<a href="movie">
 		  		<spring:message code="movie"/>
 		  	</a>
 		  </li>
 		  <li>
-		  	<a href="#!">
+		  	<a href="videoGame">
 		  		<spring:message code="videoGame"/>
 		  	</a>
 		  </li>
 		  <li>
-		  	<a href="#!">
+		  	<a href="japaneseAnimation">
 		  		<spring:message code="animationJapanese"/>
 		  	</a>
 		  </li>
@@ -64,13 +65,17 @@
 				 		</li>
 				 		<li>
 				 			<li>
-					 			<a class="dropdown-button" href="#!" data-activates="dropdownFigurine">
+					 			<a class="dropdown-button" href="#!" data-activates="dropdownFigurine" data-beloworigin="true">
 						 			<spring:message code="figurine"/>
 						 			<i class="material-icons right">arrow_drop_down</i>
 					 			</a>
 				 			</li>	
 						</li>
-				 		<li><a class="nav-btn waves-effect waves-light" href="#">Assistance</a></li>
+				 		<li>
+				 			<a class="nav-btn waves-effect waves-light" href="basket">
+				 			<spring:message code="basket"/>
+				 			</a>
+				 		</li>
 				 		<li>
 					 		<form>
 						        <div class="input-field">
@@ -115,7 +120,7 @@
 				<div class="row">
 					<div class="col l6 s12">
 						<h5>Le site de Damien et Louis</h5>
-						<p>Techniquement on peut �cire un truc ici</p>
+						<p>Techniquement on peut écrire un truc ici</p>
 					</div>
 					<div class="col l4 offset-l2 s12">
 						<h5 class="black-text">Links</h5>
@@ -129,7 +134,7 @@
 			
 		<div class="footer-copyright">
             <div class="container">
-	            � 2016 Copyright Henallux LouisDamien
+	            2016 Copyright Henallux LouisDamien
 	            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
             </div>
           </div>

@@ -1,12 +1,11 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ include file="include/importTags.jsp" %>
+
 
 <html>
 
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>Inscription!</title>
+		<title><spring:message code="registration"/></title>
 	</head>
 	
 	<body>
@@ -15,7 +14,7 @@
 		<div class="imageClass">
 			<img src ='<spring:url value="/images/connection.png"/>'/>
 		</div> 
-	
+		<div class="menuInscription">
 		  <ul class="collapsible" data-collapsible="accordion">
 		    <li>
 		      <div class="collapsible-header"><i class="material-icons">filter_drama</i><spring:message code="connection"/></div>
@@ -88,6 +87,7 @@
 		      </div>
 		    </li>
 		  </ul> 
+		  </div>
 		        
     </div>
 	</body>

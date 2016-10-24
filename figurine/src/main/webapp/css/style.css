@@ -27,8 +27,13 @@ button
 	margin : 10px;
 }
 
-.containier
+.imageClass
 {
-	margin: auto;
+	text-align : center ;
+}
 
+.menuInscription
+{
+	margin-left: 20%;
+	margin-right: 20%;
 }

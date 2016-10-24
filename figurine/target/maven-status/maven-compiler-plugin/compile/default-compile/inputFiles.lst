@@ -1,4 +1,5 @@
 C:\Wrkfldr\SiteWEB\progweb\figurine\src\main\java\com\spring\henallux\Application.java
+C:\Wrkfldr\SiteWEB\progweb\figurine\src\main\java\com\spring\henallux\controller\BasketController.java
 C:\Wrkfldr\SiteWEB\progweb\figurine\src\main\java\com\spring\henallux\model\Figurine.java
 C:\Wrkfldr\SiteWEB\progweb\figurine\src\main\java\com\spring\henallux\model\LineBasket.java
 C:\Wrkfldr\SiteWEB\progweb\figurine\src\main\java\com\spring\henallux\config\MainConfig.java
@@ -8,9 +9,12 @@ C:\Wrkfldr\SiteWEB\progweb\figurine\src\main\java\com\spring\henallux\controller
 C:\Wrkfldr\SiteWEB\progweb\figurine\src\main\java\com\spring\henallux\model\User.java
 C:\Wrkfldr\SiteWEB\progweb\figurine\src\main\java\com\spring\henallux\config\TilesConfig.java
 C:\Wrkfldr\SiteWEB\progweb\figurine\src\main\java\com\spring\henallux\model\Movie.java
+C:\Wrkfldr\SiteWEB\progweb\figurine\src\main\java\com\spring\henallux\controller\JapaneseAnimationController.java
+C:\Wrkfldr\SiteWEB\progweb\figurine\src\main\java\com\spring\henallux\controller\VideoGameController.java
 C:\Wrkfldr\SiteWEB\progweb\figurine\src\main\java\com\spring\henallux\model\Basket.java
 C:\Wrkfldr\SiteWEB\progweb\figurine\src\main\java\com\spring\henallux\model\Game.java
 C:\Wrkfldr\SiteWEB\progweb\figurine\src\main\java\com\spring\henallux\service\FigurineService.java
 C:\Wrkfldr\SiteWEB\progweb\figurine\src\main\java\com\spring\henallux\controller\WelcomeController.java
 C:\Wrkfldr\SiteWEB\progweb\figurine\src\main\java\com\spring\henallux\model\Promotion.java
 C:\Wrkfldr\SiteWEB\progweb\figurine\src\main\java\com\spring\henallux\model\Animation.java
+C:\Wrkfldr\SiteWEB\progweb\figurine\src\main\java\com\spring\henallux\controller\MovieController.java
