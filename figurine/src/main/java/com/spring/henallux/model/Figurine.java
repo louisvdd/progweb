@@ -4,8 +4,10 @@ public class Figurine
 {
 	private int idFigurine;
 	private String name;
+	private String description;
 	private double weight;
 	private double size;
+	private String brand; //marque
 	private boolean painting;
 	private int nbStock;
 	private double cost;
@@ -19,6 +21,16 @@ public class Figurine
 	public int getIdFigurine()
 	{
 		return idFigurine;
+	}
+	
+	public String getDescription()
+	{
+		return description;
+	}
+	
+	public String getBrand()
+	{
+		return brand;
 	}
 	
 	public String getName()
@@ -56,6 +68,16 @@ public class Figurine
 	public void setName(String n)
 	{
 		name = n;
+	}
+	
+	public void setDescription(String d)
+	{
+		description = d;
+	}
+	
+	public void setBrand(String b)
+	{
+		brand = b;
 	}
 	
 	public void setWeight(double w)

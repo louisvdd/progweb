@@ -6,6 +6,8 @@ public class User
 	private String firstName;
 	private String lastName;
 	private String email;
+	private String numTel;
+	private String numFax;
 	private String street;
 	private String city;
 	private String postalCode;
@@ -21,6 +23,17 @@ public class User
 	public int getIdUser()
 	{
 		return idUser;
+	}
+	
+	public String getNumTel() 
+	{
+		return numTel;
+	}
+
+	
+	public String getNumFax() 
+	{
+		return numFax;
 	}
 	
 	public String getFirstName()
@@ -69,6 +82,17 @@ public class User
 	{
 		firstName = f;
 	}
+	
+	public void setNumFax(String numFax) 
+	{
+		this.numFax = numFax;
+	}
+	
+	public void setNumTel(String numTel) 
+	{
+		this.numTel = numTel;
+	}
+
 	
 	public void setLastName(String l)
 	{
