@@ -9,7 +9,11 @@
 	</head>
 	
 	<body>
-		<div class="container">			
+		<div class="container">		
+			
+  			<div class="card-panel hoverable"> Hoverable Card Panel</div>
+        
+				
 			<spring:message code="receptionMessage"/>
 			<h1>Alors Louis, on travaille?</h1>
 		</div>
