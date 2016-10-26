@@ -11,7 +11,7 @@
 	<body>
 		<div class="container">
 			<h1><spring:message code="basketTitle"/></h1>
-			
+			Bonjour
 		  	<ul class="collection">
 			    <li class="collection-item avatar">
 			      <img src="images/figurine1.png" alt="" weight="50px" height="50px">
