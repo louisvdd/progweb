@@ -10,10 +10,7 @@
 	
 	<body>
 	
-	<div class="container">
-		<div class="imageClass">
-			<img src ='<spring:url value="/images/connection.png"/>'/>
-		</div> 
+	<div class="container"> 
 		<div class="menuInscription">
 		  <ul class="collapsible" data-collapsible="accordion">
 		    <li>
@@ -88,7 +85,9 @@
 		    </li>
 		  </ul> 
 		  </div>
-		        
+		  <div class="imageClass">
+			<img src ='<spring:url value="/images/connection.png"/>'/>
+		</div>      
     </div>
 	</body>
 	

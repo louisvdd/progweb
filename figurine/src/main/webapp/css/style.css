@@ -61,6 +61,11 @@ button
     margin:   10px;
 }
 
+body
+{
+	background-image:url("images/background.jpg");
+}
+
 
 
 
