@@ -2,7 +2,7 @@ package com.spring.henallux.model;
 
 public class User 
 {
-	private int idUser;
+	private String idUser;
 	private String firstName;
 	private String lastName;
 	private String email;
@@ -20,7 +20,7 @@ public class User
 	}
 	
 	//GETTERS ========================================================
-	public int getIdUser()
+	public String getIdUser()
 	{
 		return idUser;
 	}

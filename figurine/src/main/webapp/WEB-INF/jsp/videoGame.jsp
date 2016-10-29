@@ -127,6 +127,9 @@
 	        					<div>
 	        						<h5 class="center-align">Prize : 50euros</h5>
 	        					</div>
+	        					<button class="btn waves-effect waves-light">
+	        						Ajouter panier
+	        					</button>
 	        				</div>
 	        			</div>
 	        			<div class="col s4">
@@ -140,6 +143,9 @@
 	        					<div>
 	        						<h5 class="center-align">Prize : 50euros</h5>
 	        					</div>
+	        					<button class="btn waves-effect waves-light">
+	        						Ajouter panier
+	        					</button>
 	        				</div>
 	        			</div>
 	        			<div class="col s4">
@@ -153,6 +159,9 @@
 	        					<div>
 	        						<h5 class="center-align">Prize : 50euros</h5>
 	        					</div>
+	        					<button class="btn waves-effect waves-light">
+	        						Ajouter panier
+	        					</button>
 	        				</div>
 	        			</div>
 	        		</div>

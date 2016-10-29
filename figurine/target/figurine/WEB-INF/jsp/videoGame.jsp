@@ -26,23 +26,97 @@
 				<div class="col s3">
 					<ul class="collapsible" data-collapsible="accordion">
 					 	<li>
-							<div class="collapsible-header"><i class="material-icons">filter_drama</i>Prix</div>
-							<div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+							<div class="collapsible-header"><i><img src="images/euro.png" height="20px"></i>Prix</div>
+							<div class="collapsible-body">
+								<div class="row">
+					      			<form class="col s12">
+					      				<div class="input-field col s4">
+								          	<input id="icon_prefix" type="text" class="validate">
+								          	<label for="icon_prefix">De</label>
+								        </div>
+					      				<div class="input-field col s4">
+								          	<input id="icon_prefix" type="text" class="validate">
+								          	<label for="icon_prefix">à euros</label>
+								        </div>							       
+					      			</form>
+					      			<button class="waves-effect waves-light btn">Chercher</button>
+					      		</div>
+							</div>
 					    </li>
 					    <li>
-					      	<div class="collapsible-header"><i class="material-icons">place</i>Taille</div>
-					      	<div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+					      	<div class="collapsible-header"><i><img src="images/taille.png" height="20px"></i>Taille</div>
+					      	<div class="collapsible-body">
+					      		<div class="row">
+					      			<form class="col s12">
+					      				<div class="input-field col s4">
+								          	<input id="icon_prefix" type="text" class="validate">
+								          	<label for="icon_prefix">De</label>
+								        </div>
+					      				<div class="input-field col s4">
+								          	<input id="icon_prefix" type="text" class="validate">
+								          	<label for="icon_prefix">à cm</label>
+								        </div>							       
+					      			</form>
+					      			<button class="waves-effect waves-light btn">Chercher</button>
+					      		</div>
+					      	</div>
 					    </li>
 					    <li>
-					      	<div class="collapsible-header"><i class="material-icons">whatshot</i>Poids</div>
-					      	<div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+					      	<div class="collapsible-header"><i><img src="images/poids.png" height="20px"></i>Poids</div>
+					      	<div class="collapsible-body">
+					      		<div class="row">
+					      			<form class="col s12">
+					      				<div class="input-field col s4">
+								          	<input id="icon_prefix" type="text" class="validate">
+								          	<label for="icon_prefix">De</label>
+								        </div>
+					      				<div class="input-field col s4">
+								          	<input id="icon_prefix" type="text" class="validate">
+								          	<label for="icon_prefix">à KG</label>
+								        </div>							       
+					      			</form>
+					      			<button class="waves-effect waves-light btn">Chercher</button>
+					      		</div>
+					      	</div>
+					    </li>
+					    <li>
+							<div class="collapsible-header"><i><img src="images/marque.png" height="20px"></i>Marque</div>
+							<div class="collapsible-body">
+								<ul>
+									<li>
+									  	<input type="checkbox" id="marque1"/>
+									  	<label for="marque1">Marque1</label>
+									</li>
+									<li>
+									  	<input type="checkbox" id="marque2"/>
+									  	<label for="marque2">Marque2</label>
+									</li>
+									<li>
+									  	<input type="checkbox" id="marque3"/>
+									  	<label for="marque3">Marque3</label>
+									</li>
+									<li>
+									  	<input type="checkbox" id="marque4"/>
+									  	<label for="marque4">Marque4</label>
+									</li>
+									<li> 
+									  	<input type="checkbox" id="marque5"/>
+									  	<label for="marque5">Marque5</label>
+									</li>
+									<li>
+									  	<input type="checkbox" id="marque6"/>
+									  	<label for="marque6">Marque6</label>
+									</li>
+								</ul>
+								<button class="waves-effect waves-light btn">Chercher</button>
+							</div>
 					    </li>
 					</ul>
 	        	</div>
 	        	
 	        	<div class="col s9">
 	        		<div class="row">
-	        			<div class="col s3">
+	        			<div class="col s4">
 	        				<div class="card">
 	        					<div class="card-image">
 	        						<img src="images/animé.jpg" alt="" height="200px">
@@ -53,9 +127,12 @@
 	        					<div>
 	        						<h5 class="center-align">Prize : 50euros</h5>
 	        					</div>
+	        					<button class="btn waves-effect waves-light">
+	        						Ajouter panier
+	        					</button>
 	        				</div>
 	        			</div>
-	        			<div class="col s3">
+	        			<div class="col s4">
 	        				<div class="card">
 	        					<div class="card-image">
 	        						<img src="images/original.png" alt="" height="200px">
@@ -66,9 +143,12 @@
 	        					<div>
 	        						<h5 class="center-align">Prize : 50euros</h5>
 	        					</div>
+	        					<button class="btn waves-effect waves-light">
+	        						Ajouter panier
+	        					</button>
 	        				</div>
 	        			</div>
-	        			<div class="col s3">
+	        			<div class="col s4">
 	        				<div class="card">
 	        					<div class="card-image">
 	        						<img src="images/jeuxvidéo.jpeg" alt="" height="200px">
@@ -79,6 +159,9 @@
 	        					<div>
 	        						<h5 class="center-align">Prize : 50euros</h5>
 	        					</div>
+	        					<button class="btn waves-effect waves-light">
+	        						Ajouter panier
+	        					</button>
 	        				</div>
 	        			</div>
 	        		</div>
