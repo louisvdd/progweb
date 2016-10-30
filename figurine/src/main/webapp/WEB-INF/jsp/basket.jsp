@@ -22,7 +22,7 @@
 				      <p><spring:message code="brand"/> : Marque1 <br>
 				         <spring:message code="description"/> : <div class="truncate"><spring:message code="long"/></div>
 				      </p>
-				      <p class="secondary-content">Prix : 50 euros</p>
+				      <p class="secondary-content"><spring:message code="prize"/> : 50 <spring:message code="euro"/></p>
 				    </li>
 				    <li class="collection-item avatar">
 				      <img src="images/figurine2.png" alt="" height="50px">
@@ -30,7 +30,7 @@
 				      <p><spring:message code="brand"/> : Marque2 <br>
 				         <spring:message code="description"/> : <p class="truncate"><spring:message code="long"/></p>
 				      </p>
-				      <p class="secondary-content">Prix : 50 euros</p>
+				      <p class="secondary-content"><spring:message code="prize"/> : 50 <spring:message code="euro"/></p>
 				    </li>
 				    <li class="collection-item avatar">
 				      <img src="images/figurine3.png" alt="" height="50px">
@@ -38,7 +38,7 @@
 				      <p><spring:message code="brand"/> : Marque3 <br>
 				         <spring:message code="description"/> : <p class="truncate"><spring:message code="long"/></p>
 				      </p>
-				      <p class="secondary-content">Prix : 50 euros</p>
+				      <p class="secondary-content"><spring:message code="prize"/> : 50 <spring:message code="euro"/></p>
 				    </li>
 				  </ul>
 	                   	
@@ -46,7 +46,9 @@
 	  			
 	  			<div class="col s3">
 	  				<div class="card">
-		  				<h5>Commande</h5>
+		  				<h5>
+		  					<spring:message code="command"/>
+						</h5>
 		  				<ul>
 		  					<div class="row">
 		  						<li>
@@ -54,7 +56,7 @@
 		  								figurine 1
 		  							</div>
 		  							<div class="col s5">
-		  								50 euros
+		  								50 <spring:message code="euro"/>
 		  							</div>
 		  						</li>
 		  					</div>
@@ -64,7 +66,7 @@
 		  								figurine 2
 		  							</div>
 		  							<div class="col s5">
-		  								50 euros
+		  								50 <spring:message code="euro"/>
 		  							</div>
 		  						</li>
 		  					</div>
@@ -74,7 +76,7 @@
 		  								figurine 3
 		  							</div>
 		  							<div class="col s5">
-		  								50 euros
+		  								50 <spring:message code="euro"/>
 		  							</div>
 		  						</li>
 		  					</div>
@@ -82,14 +84,14 @@
 		  					<div class="row">
 		  						<li>
 		  							<div>
-		  								Total : 150 euros
+		  								<spring:message code="total"/> : 150 <spring:message code="euro"/>
 		  							</div>		  							
 		  						</li>
 		  					</div>
 		  				</ul>		  				
 		  			</div>
 		  			<button class="btn waves-effect waves-light" type="submit" name="action">
-				        <spring:message code="command"/>
+				        <spring:message code="commandButton"/>
 		  			</button>
 	  			</div>
   			</div>

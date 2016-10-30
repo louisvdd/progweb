@@ -32,7 +32,7 @@
 			        </div>
 
 			        <form:button class="btn waves-effect waves-light">
-			        	<spring:message code="connection"/>
+			        	<spring:message code="connectionButton"/>
 	  				</form:button>
 	  			</form:form>
 		      </div>
@@ -91,7 +91,7 @@
 			        </div>
 			        
 					<button class="btn waves-effect waves-light" type="submit" name="action">
-						<spring:message code="validate"/>
+						<spring:message code="validateButton"/>
 					  	<i class="material-icons right">send</i>
 					</button>
 				</form:form>

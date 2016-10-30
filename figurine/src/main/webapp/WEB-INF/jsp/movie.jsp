@@ -10,7 +10,9 @@
 	
 	<body>
 		<div class="container">
-			<h2>Trouvez la figurine de jeu que vous désirez</h2>
+			<h2>
+				<spring:message code="findMovie"/>
+			</h2>
 			<div class="row">
 				<div class="col s3">
 					<form>
@@ -26,61 +28,79 @@
 				<div class="col s3">
 					<ul class="collapsible" data-collapsible="accordion">
 					 	<li>
-							<div class="collapsible-header"><i><img src="images/euro.png" height="20px"></i>Prix</div>
+							<div class="collapsible-header"><i><img src="images/euro.png" height="20px"></i><spring:message code="prize"/></div>
 							<div class="collapsible-body">
 								<div class="row">
 					      			<form class="col s12">
 					      				<div class="input-field col s4">
 								          	<input id="icon_prefix" type="text" class="validate">
-								          	<label for="icon_prefix">De</label>
+								          	<label for="icon_prefix">
+								          		<spring:message code="from"/>
+								          	</label>
 								        </div>
 					      				<div class="input-field col s4">
 								          	<input id="icon_prefix" type="text" class="validate">
-								          	<label for="icon_prefix">à euros</label>
+								          	<label for="icon_prefix">
+								          		<spring:message code="to"/>
+								          	</label>
 								        </div>							       
 					      			</form>
-					      			<button class="waves-effect waves-light btn">Chercher</button>
+					      			<button class="waves-effect waves-light btn">
+					      				<spring:message code="searchButton"/>
+					      			</button>
 					      		</div>
 							</div>
 					    </li>
 					    <li>
-					      	<div class="collapsible-header"><i><img src="images/taille.png" height="20px"></i>Taille</div>
+					      	<div class="collapsible-header"><i><img src="images/taille.png" height="20px"></i><spring:message code="height"/> (<spring:message code="cm"/>)</div>
 					      	<div class="collapsible-body">
 					      		<div class="row">
 					      			<form class="col s12">
 					      				<div class="input-field col s4">
 								          	<input id="icon_prefix" type="text" class="validate">
-								          	<label for="icon_prefix">De</label>
+								          	<label for="icon_prefix">
+								          		<spring:message code="from"/>
+								          	</label>
 								        </div>
 					      				<div class="input-field col s4">
 								          	<input id="icon_prefix" type="text" class="validate">
-								          	<label for="icon_prefix">à cm</label>
+								          	<label for="icon_prefix">
+								          		<spring:message code="to"/>								          		
+								          	</label>							          							          	
 								        </div>							       
 					      			</form>
-					      			<button class="waves-effect waves-light btn">Chercher</button>
+					      			<button class="waves-effect waves-light btn">
+					      				<spring:message code="searchButton"/>
+					      			</button>
 					      		</div>
 					      	</div>
 					    </li>
 					    <li>
-					      	<div class="collapsible-header"><i><img src="images/poids.png" height="20px"></i>Poids</div>
+					      	<div class="collapsible-header"><i><img src="images/poids.png" height="20px"></i><spring:message code="weight"/> (<spring:message code="gram"/>)</div>
 					      	<div class="collapsible-body">
 					      		<div class="row">
 					      			<form class="col s12">
 					      				<div class="input-field col s4">
 								          	<input id="icon_prefix" type="text" class="validate">
-								          	<label for="icon_prefix">De</label>
+								          	<label for="icon_prefix">
+								          		<spring:message code="from"/>
+								          	</label>
 								        </div>
 					      				<div class="input-field col s4">
 								          	<input id="icon_prefix" type="text" class="validate">
-								          	<label for="icon_prefix">à KG</label>
+								          	<label for="icon_prefix">
+								          		<spring:message code="to"/>								          		
+								          	</label>
 								        </div>							       
 					      			</form>
-					      			<button class="waves-effect waves-light btn">Chercher</button>
+					      			<button class="waves-effect waves-light btn">
+					      				<spring:message code="searchButton"/>
+					      			</button>
 					      		</div>
 					      	</div>
 					    </li>
 					    <li>
-							<div class="collapsible-header"><i><img src="images/marque.png" height="20px"></i>Marque</div>
+							<div class="collapsible-header"><i><img src="images/marque.png" height="20px"></i><spring:message code="brand"/></div>
 							<div class="collapsible-body">
 								<ul>
 									<li>
@@ -108,7 +128,9 @@
 									  	<label for="marque6">Marque6</label>
 									</li>
 								</ul>
-								<button class="waves-effect waves-light btn">Chercher</button>
+								<button class="waves-effect waves-light btn">
+					      			<spring:message code="searchButton"/>
+					      		</button>
 							</div>
 					    </li>
 					</ul>
@@ -117,50 +139,57 @@
 	        	<div class="col s9">
 	        		<div class="row">
 	        			<div class="col s4">
-	        				<div class="card">
+	        				<div class="card">	        					
+	        					<div>
+	        						<h4 class="center-align">
+	        							<spring:message code="figurineMovie"/>
+	        						</h4>
+	        					</div>
 	        					<div class="card-image">
 	        						<img src="images/animé.jpg" alt="" height="200px">
 	        					</div>
 	        					<div>
-	        						<h4 class="center-align">Figurine animé</h4>
+	        						<h5 class="center-align"><spring:message code="prize"/> : 50 <spring:message code="euro"/></h5>
 	        					</div>
-	        					<div>
-	        						<h5 class="center-align">Prize : 50euros</h5>
-	        					</div>
+	        					<p><spring:message code="description"/> : <spring:message code="long"/></p>	        					
 	        					<button class="btn waves-effect waves-light">
-	        						Ajouter panier
+	        						<spring:message code="addBasketButton"/>
 	        					</button>
 	        				</div>
 	        			</div>
 	        			<div class="col s4">
 	        				<div class="card">
+	        					<div>
+	        						<h4 class="center-align">
+	        							<spring:message code="figurineMovie"/>
+	        						</h4>
+	        					</div>
 	        					<div class="card-image">
 	        						<img src="images/original.png" alt="" height="200px">
 	        					</div>
 	        					<div>
-	        						<h4 class="center-align">Figurine animé</h4>
-	        					</div>
-	        					<div>
-	        						<h5 class="center-align">Prize : 50euros</h5>
+	        						<h5 class="center-align"><spring:message code="prize"/> : 50 <spring:message code="euro"/></h5>
 	        					</div>
 	        					<button class="btn waves-effect waves-light">
-	        						Ajouter panier
+	        						<spring:message code="addBasketButton"/>
 	        					</button>
 	        				</div>
 	        			</div>
 	        			<div class="col s4">
-	        				<div class="card">
+	        				<div class="card">	        					
+	        					<div>
+	        						<h4 class="center-align">
+	        							<spring:message code="figurineMovie"/>
+	        						</h4>
+	        					</div>
 	        					<div class="card-image">
 	        						<img src="images/jeuxvidéo.jpeg" alt="" height="200px">
 	        					</div>
 	        					<div>
-	        						<h4 class="center-align">Figurine animé</h4>
-	        					</div>
-	        					<div>
-	        						<h5 class="center-align">Prize : 50euros</h5>
+	        						<h5 class="center-align"><spring:message code="prize"/> : 50 <spring:message code="euro"/></h5>
 	        					</div>
 	        					<button class="btn waves-effect waves-light">
-	        						Ajouter panier
+	        						<spring:message code="addBasketButton"/>
 	        					</button>
 	        				</div>
 	        			</div>

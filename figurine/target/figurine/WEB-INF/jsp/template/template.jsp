@@ -110,11 +110,17 @@
 			<div class="container">
 				<div class="row">
 					<div class="col l6 s12">
-						<h5>Le site de Damien et Louis</h5>
-						<p>Techniquement on peut écrire un truc ici</p>
+						<h5>
+							<spring:message code="damienLouis"/>
+						</h5>
+						<p>
+							<spring:message code="long"/>
+						</p>
 					</div>
 					<div class="col l4 offset-l2 s12">
-						<h5 class="black-text">Links</h5>
+						<h5 class="black-text">
+							<spring:message code="link"/>
+						</h5>
 						<ul>
 							<li><a>Facebook</a></li>
 							<li><a>Twitter</a></li>
@@ -126,7 +132,9 @@
 		<div class="footer-copyright">
             <div class="container">
 	            2016 Copyright Henallux LouisDamien
-	            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+	            <a class="grey-text text-lighten-4 right" href="#!">
+	            	<spring:message code="moreLink"/>
+	            </a>
             </div>
           </div>
 		</footer>

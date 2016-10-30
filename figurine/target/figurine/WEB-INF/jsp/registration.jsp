@@ -32,7 +32,7 @@
 			        </div>
 
 			        <form:button class="btn waves-effect waves-light">
-			        	<spring:message code="connection"/>
+			        	<spring:message code="connectionButton"/>
 	  				</form:button>
 	  			</form:form>
 		      </div>
@@ -45,7 +45,7 @@
 		      	<form:form 	id="registrationForm"
 		      				method="POST"
 		      				action="/figurine/registration/userRegistration"
-		      				modelAttribute="userRegistration">
+		      				modelAttribute="user">
 			      	<div class="input-field col s6">
 			          <form:input path="idUser" type="text" class="validate"/>
 			          <form:label path="idUser" ><spring:message code="userName"/></form:label>
@@ -91,7 +91,7 @@
 			        </div>
 			        
 					<button class="btn waves-effect waves-light" type="submit" name="action">
-						<spring:message code="validate"/>
+						<spring:message code="validateButton"/>
 					  	<i class="material-icons right">send</i>
 					</button>
 				</form:form>
