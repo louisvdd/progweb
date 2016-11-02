@@ -1,0 +1,104 @@
+//Promotion
+create table Promotion
+(
+	idPromotion int not null,
+	pourcAmount float not null check(pourAmount > 0),
+	startDate date not null,
+	endDate date not null,
+
+	constraint pk_Promotion primary key(idPromotion),
+	check(startDate < enDate)	
+);
+
+//Figurine
+create table Figurine
+(
+	idFigurine int not null,
+	name varchar(50) not null,
+	description varchar(300) not null,
+	height float not null,
+	weight int not null,
+	brand varchar(50) not null,
+	pint boolean not null,
+	nbStock int not null,
+	cost float not null,
+
+	constraint pk_Figurine primary key(idFigurine),
+	check(cost > 0)
+);
+
+//Marque
+create table Brand
+(
+	idBrand int not null,
+	name varchar(50) not null,
+
+	constraint pk_Brand primary key(idBrand)
+);
+
+/Catégorie
+create table Category
+(
+	idCategory int not null,
+	name varchar(50) not null,
+	outDate date not null,
+	producer varchar(50) not null,
+
+	constraint pk_Category primary key(idCategory)
+);
+
+//Ligne commande
+create table CommandLine
+(
+	nbFigurine int not null,
+	prizeCommand float not null,
+	idPromotionFK int not null
+	
+	constraint fk_Promotion foreign key(idPromotionFk) referecnces Promotion(idPromotion),
+	check(nbFigurine > 0),
+	check(prizeCommand > 0)
+);
+
+//Langue
+create table Language
+(
+	idLanguage int not null,
+	name varchar(50) not null,
+
+	constraint pk_Language primary key(idLanguage)
+);
+
+//Commande
+create table Command
+(
+	idCommand int not null,
+	dateCommand date not null,
+
+	constraint pk_Command primary key(idCommand)
+);
+
+//Utilisateur
+create table User
+(
+	idUser int not null,
+	lastName varchar(50) not null,
+	firstName varchar(50) not null,
+	mail varchar(50) not null,
+	numTel varchar(50),
+	numFax varchar(50),
+	street varchar(50) not null,
+	city varchar(50) not null,
+	postalCode int not null,
+	country varchar(50) not null,
+	password varchar(50) not null,
+
+	constraint pk_User primamry key(idUser)
+);
+
+//Figurine traduction
+create table FigurineTraduction
+();
+
+//Catégorie traduction
+create table CategoryTraduction
+();
