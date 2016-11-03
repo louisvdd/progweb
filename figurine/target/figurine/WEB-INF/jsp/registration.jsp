@@ -19,7 +19,7 @@
 		      	<form:form 	id="connectionForm"
 		      				method="POST"
 		      				action="/figurine/registration/connection"
-		      				modelAttribute="user">
+		      				modelAttribute="connection">
 		         
 			        <div class="input-field col s6">
 			          <form:input path="idUser" type="text" class="validate"/>
@@ -44,8 +44,8 @@
 		      
 		      	<form:form 	id="registrationForm"
 		      				method="POST"
-		      				action="/figurine/registration/userRegistration"
-		      				modelAttribute="user">
+		      				action="/figurine/registration/registrationUser"
+		      				modelAttribute="registration">
 			      	<div class="input-field col s6">
 			          <form:input path="idUser" type="text" class="validate"/>
 			          <form:label path="idUser" ><spring:message code="userName"/></form:label>

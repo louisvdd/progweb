@@ -43,11 +43,11 @@
 								          	<label for="icon_prefix">
 								          		<spring:message code="to"/>
 								          	</label>
-								        </div>							       
+								        </div>							       					      			
+						      			<button class="waves-effect waves-light btn">
+						      				<spring:message code="searchButton"/>
+						      			</button>
 					      			</form>
-					      			<button class="waves-effect waves-light btn">
-					      				<spring:message code="searchButton"/>
-					      			</button>
 					      		</div>
 							</div>
 					    </li>

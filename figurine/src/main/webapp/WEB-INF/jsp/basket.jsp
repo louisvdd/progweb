@@ -90,9 +90,14 @@
 		  					</div>
 		  				</ul>		  				
 		  			</div>
-		  			<button class="btn waves-effect waves-light" type="submit" name="action">
-				        <spring:message code="commandButton"/>
-		  			</button>
+		  			<form:form 	id="commandUser"
+		      					method="POST"
+		      					action="/figurine/basket/command"
+		      					modelAttribute="command">
+			  			<form:button class="btn waves-effect waves-light" type="submit" name="action">
+					        <spring:message code="commandButton"/>
+			  			</form:button>
+		  			</form:form>
 	  			</div>
   			</div>
 		</div>

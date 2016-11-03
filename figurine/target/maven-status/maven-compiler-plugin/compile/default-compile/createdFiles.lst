@@ -6,6 +6,7 @@ com\spring\henallux\config\TilesConfig.class
 com\spring\henallux\model\CategoryTraduction.class
 com\spring\henallux\model\Promotion.class
 com\spring\henallux\model\LineCommand.class
+com\spring\henallux\service\RegistrationService.class
 com\spring\henallux\controller\JapaneseAnimationController.class
 com\spring\henallux\service\FigurineService.class
 com\spring\henallux\controller\MovieController.class
