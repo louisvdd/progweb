@@ -13,6 +13,7 @@ public class User
 	private String postalCode;
 	private String country;
 	private String password;
+	private Command command;
 	
 	public User()
 	{
@@ -74,6 +75,11 @@ public class User
 	public String getPassword()
 	{
 		return password;
+	}
+	
+	public Command getCommand()
+	{
+		return command;
 	}
 	
 	//SETTERS ========================================================
