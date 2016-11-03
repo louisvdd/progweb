@@ -15,7 +15,7 @@ com\spring\henallux\controller\VideoGameController.class
 com\spring\henallux\config\MainConfig.class
 com\spring\henallux\controller\ConnectionController.class
 com\spring\henallux\model\FigurineTraduction.class
-com\spring\henallux\controller\RegistrationController.class
+com\spring\henallux\controller\RegistrationConnectionController.class
 com\spring\henallux\controller\BasketController.class
 com\spring\henallux\model\Figurine.class
 com\spring\henallux\model\Language.class

@@ -77,7 +77,7 @@
 				 			</a>
 				 		</li>				 
 				 		<li>
-				 			<a class="nav-btn waves-effect waves-light" href="registration">
+				 			<a class="nav-btn waves-effect waves-light" href="registrationConnection">
 				 				<spring:message code="myAccount"/>
 							</a>
 				 		</li>
