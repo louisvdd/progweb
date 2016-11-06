@@ -201,6 +201,7 @@
 		        					<div class="card-image">
 		        						<img src="images/animé.jpg" alt="" height="200px">
 		        					</div>
+		        					
 		        					<div>
 		        						<h5 class="center-align"><spring:message code="prize"/> : 50 <spring:message code="euro"/></h5>
 		        					</div>
