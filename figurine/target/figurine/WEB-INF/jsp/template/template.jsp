@@ -113,9 +113,6 @@
 						<h5>
 							<spring:message code="damienLouis"/>
 						</h5>
-						<p>
-							<spring:message code="long"/>
-						</p>
 					</div>
 					<div class="col l4 offset-l2 s12">
 						<h5 class="black-text">
