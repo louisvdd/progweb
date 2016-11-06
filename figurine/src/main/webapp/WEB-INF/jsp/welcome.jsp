@@ -18,6 +18,7 @@
 		</script>	
 	</head>-->
 	
+	
 	<head>
 		<title><spring:message code="animationJapanese"/></title>
 		<script type="text/javascript">
