@@ -7,7 +7,7 @@
 	<head>
 		<title><spring:message code="registration"/></title>
 	</head>
-	
+	 
 	<body>
 		<div class="container"> 
 			Nope
