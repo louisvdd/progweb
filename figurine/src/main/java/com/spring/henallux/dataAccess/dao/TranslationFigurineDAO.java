@@ -18,22 +18,22 @@ public class TranslationFigurineDAO
 	@Autowired
 	private ProviderConverter providerConverter;
 	
-	public Category save(Category category)
+	public TranslationFigurine save(TranslationFigurine translationFigurine)
 	{
-		CategoryEntity categoryEntity = providerConverter.categoryModeltoCategoryEntity(category);
-		categoryEntity = categoryRepository.save(categoryEntity);
-		return providerConverter.categoryEntitytoCategoryModel(categoryEntity);
+		TranslationFigurineEntity translationFigurineEntity = providerConverter.translationFigurineModeltoTranslationFigurineEntity(translationFigurine);
+		translationFigurineEntity = translationFigurineRepository.save(translationFigurineEntity);
+		return providerConverter.translationFigurineEntitytoTranslationFigurineModel(translationFigurineEntity);
 	}
 	
-	public ArrayList<Category> getAllCategories()
+	public ArrayList<TranslationFigurine> getAllTranslationFigurines()
 	{
-		List <CategoryEntity> categoryEntities = categoryRepository.findAll();
-		ArrayList <Category> categories = new ArrayList<>();
-		for (CategoryEntity entity : categoryEntities)
+		List <TranslationFigurineEntity> translationFigurineEntities = translationFigurineRepository.findAll();
+		ArrayList <TranslationFigurine> translationFigurines = new ArrayList<>();
+		for (TranslationFigurineEntity entity : translationFigurineEntities)
 		{
-			Category category = providerConverter.categoryEntitytoCategoryModel(entity);
-			categories.add(category);
+			TranslationFigurine translationFigurine = providerConverter.translationFigurineEntitytoTranslationFigurineModel(entity);
+			translationFigurines.add(translationFigurine);
 		}
-		return categories;
+		return translationFigurines;
 	}
 }

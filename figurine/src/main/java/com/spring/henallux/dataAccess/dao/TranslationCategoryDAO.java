@@ -18,22 +18,22 @@ public class TranslationCategoryDAO
 	@Autowired
 	private ProviderConverter providerConverter;
 	
-	public Category save(Category category)
+	public TranslationCategory save(TranslationCategory translationCategory)
 	{
-		CategoryEntity categoryEntity = providerConverter.categoryModeltoCategoryEntity(category);
-		categoryEntity = categoryRepository.save(categoryEntity);
-		return providerConverter.categoryEntitytoCategoryModel(categoryEntity);
+		TranslationCategoryEntity translationCategoryEntity = providerConverter.translationCategoryModeltoTranslationCategoryEntity(translationCategory);
+		translationCategoryEntity = translationCategoryRepository.save(translationCategoryEntity);
+		return providerConverter.translationCategoryEntitytoTranslationCategoryModel(translationCategoryEntity);
 	}
 	
-	public ArrayList<Category> getAllCategories()
+	public ArrayList<TranslationCategory> getAllTranslationCategories()
 	{
-		List <CategoryEntity> categoryEntities = categoryRepository.findAll();
-		ArrayList <Category> categories = new ArrayList<>();
-		for (CategoryEntity entity : categoryEntities)
+		List <TranslationCategoryEntity> translationCategoryEntities = translationCategoryRepository.findAll();
+		ArrayList <TranslationCategory> translationCategories = new ArrayList<>();
+		for (TranslationCategoryEntity entity : translationCategoryEntities)
 		{
-			Category category = providerConverter.categoryEntitytoCategoryModel(entity);
-			categories.add(category);
+			TranslationCategory translationCategory = providerConverter.translationCategoryEntitytoTranslationCategoryModel(entity);
+			translationCategories.add(translationCategory);
 		}
-		return categories;
+		return translationCategories;
 	}
 }

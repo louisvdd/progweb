@@ -6,6 +6,8 @@ import org.junit.experimental.categories.Category;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.spring.henallux.model.Command;
+
 @Service
 public class CommandLineDAO 
 {
@@ -15,22 +17,22 @@ public class CommandLineDAO
 	@Autowired
 	private ProviderConverter providerConverter;
 	
-	public Category save(Category category)
+	public CommandLine save(CommandLine commandLine)
 	{
-		CategoryEntity categoryEntity = providerConverter.categoryModeltoCategoryEntity(category);
-		categoryEntity = categoryRepository.save(categoryEntity);
-		return providerConverter.categoryEntitytoCategoryModel(categoryEntity);
+		CommandLineEntity commandLineEntity = providerConverter.commandLineModeltoCommandLineEntity(commandLine);
+		commandLineEntity = commandLineRepository.save(commandLineEntity);
+		return providerConverter.commandLineEntitytoCommandModel(commandLineEntity);
 	}
 	
-	public ArrayList<Category> getAllCategories()
+	public ArrayList<Command> getAllCommandLines()
 	{
-		List <CategoryEntity> categoryEntities = categoryRepository.findAll();
-		ArrayList <Category> categories = new ArrayList<>();
-		for (CategoryEntity entity : categoryEntities)
+		List <CommandLineEntity> commandeLIneEntities = commandLineRepository.findAll();
+		ArrayList <CommandLine> commandLines = new ArrayList<>();
+		for (CommandLineEntity entity : commandeLineEntities)
 		{
-			Category category = providerConverter.categoryEntitytoCategoryModel(entity);
-			categories.add(category);
+			CommandLine commandLine = providerConverter.commandLineEntitytoCommandLineModel(entity);
+			commandLines.add(commandLine);
 		}
-		return categories;
+		return commandLines;
 	}
 }

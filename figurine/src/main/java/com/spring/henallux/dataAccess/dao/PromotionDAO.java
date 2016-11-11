@@ -18,22 +18,22 @@ public class PromotionDAO
 	@Autowired
 	private ProviderConverter providerConverter;
 	
-	public Category save(Category category)
+	public Promotion save(Promotion promotion)
 	{
-		CategoryEntity categoryEntity = providerConverter.categoryModeltoCategoryEntity(category);
-		categoryEntity = categoryRepository.save(categoryEntity);
-		return providerConverter.categoryEntitytoCategoryModel(categoryEntity);
+		PromotionEntity promotionEntity = providerConverter.promotionModeltoPromotionEntity(promotion);
+		promotionEntity = promotionRepository.save(promotionEntity);
+		return providerConverter.promotionEntitytoPromotionModel(promotionEntity);
 	}
 	
-	public ArrayList<Category> getAllCategories()
+	public ArrayList<Promotion> getAllPromotions()
 	{
-		List <CategoryEntity> categoryEntities = categoryRepository.findAll();
-		ArrayList <Category> categories = new ArrayList<>();
-		for (CategoryEntity entity : categoryEntities)
+		List <PromotionEntity> promotionEntities = promotionRepository.findAll();
+		ArrayList <Promotion> promotions = new ArrayList<>();
+		for (PromotionEntity entity : promotionEntities)
 		{
-			Category category = providerConverter.categoryEntitytoCategoryModel(entity);
-			categories.add(category);
+			Promotion promotion = providerConverter.promotionEntitytoPromotionModel(entity);
+			promotions.add(promotion);
 		}
-		return categories;
+		return promotions;
 	}
 }

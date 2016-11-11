@@ -18,22 +18,22 @@ public class LanguageDAO
 	@Autowired
 	private ProviderConverter providerConverter;
 	
-	public Category save(Category category)
+	public Language save(Language language)
 	{
-		CategoryEntity categoryEntity = providerConverter.categoryModeltoCategoryEntity(category);
-		categoryEntity = categoryRepository.save(categoryEntity);
-		return providerConverter.categoryEntitytoCategoryModel(categoryEntity);
+		LanguageEntity languageEntity = providerConverter.languageModeltoLanguageEntity(language);
+		languageEntity = languageRepository.save(languageEntity);
+		return providerConverter.languageEntitytoLanguageModel(languageEntity);
 	}
 	
-	public ArrayList<Category> getAllCategories()
+	public ArrayList<Category> getAllLanguages()
 	{
-		List <CategoryEntity> categoryEntities = categoryRepository.findAll();
-		ArrayList <Category> categories = new ArrayList<>();
-		for (CategoryEntity entity : categoryEntities)
+		List <LanguageEntity> languageEntities = languageRepository.findAll();
+		ArrayList <Language> languages = new ArrayList<>();
+		for (LanguageEntity entity : LanguageEntities)
 		{
-			Category category = providerConverter.categoryEntitytoCategoryModel(entity);
-			categories.add(category);
+			Language language = providerConverter.languageEntitytoLanguageModel(entity);
+			languages.add(language);
 		}
-		return categories;
+		return languages;
 	}
 }
