@@ -2,11 +2,15 @@ com\spring\henallux\Application.class
 com\spring\henallux\controller\WelcomeController.class
 com\spring\henallux\model\Command.class
 com\spring\henallux\model\User.class
+com\spring\henallux\controller\ErrorConnectionController.class
+com\spring\henallux\controller\UserRegistrationController.class
 com\spring\henallux\config\TilesConfig.class
 com\spring\henallux\model\CategoryTraduction.class
 com\spring\henallux\model\Promotion.class
+com\spring\henallux\controller\UserConnectionController.class
 com\spring\henallux\model\LineCommand.class
 com\spring\henallux\service\RegistrationService.class
+com\spring\henallux\controller\UserCommandController.class
 com\spring\henallux\controller\JapaneseAnimationController.class
 com\spring\henallux\service\FigurineService.class
 com\spring\henallux\controller\MovieController.class

@@ -25,17 +25,17 @@ public class RegistrationConnectionController
 	{
 		//Prend pas en compte les valeurs noté, elles seront égale à null! Pourquoi?
 		if(userConnection.getPassword().equals("1234") && userConnection.getIdUser().equals("damien"))
-			return "integrated:userConnection";
+			return "redirect:/userConnection";
 		
 		System.out.println(userConnection.getIdUser()+" "+userConnection.getPassword());
-		return "integrated:errorConnection";
+		return "redirect:/errorConnection";
 	}
 	
 	//Bouton pour l'INSCRIPTION====================================
 	@RequestMapping(value="/registration", method=RequestMethod.POST)
 	public String getFormRegistrationData(Model model, @ModelAttribute(value="registration") User userConnection)
 	{
-		return "integrated:userRegistration";
+		return "redirect:/userRegistration";
 		//normalement c'est redirect:/userRegistration mais ça ne fonctionne pas
 	}
 }

@@ -18,6 +18,7 @@
 		</script>	
 	</head>-->
 	
+	
 	<head>
 		<title><spring:message code="animationJapanese"/></title>
 		<script type="text/javascript">
@@ -204,7 +205,7 @@
 		        					<div>
 		        						<h5 class="center-align"><spring:message code="prize"/> : 50 <spring:message code="euro"/></h5>
 		        					</div>
-		        					<p><spring:message code="description"/> : <spring:message code="long"/></p>
+		        					<p><spring:message code="description"/>
 		        					<p class="range-field">
 								      <input type="range" id="test5" min="1" max="10" />
 								    </p>

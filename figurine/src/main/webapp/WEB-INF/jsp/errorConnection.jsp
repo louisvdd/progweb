@@ -10,7 +10,7 @@
 	 
 	<body>
 		<div class="container"> 
-			Nope
+			<h1 class="header center rbwd-red-text text-base thin-text">Erreur de connection</h1>
 	    </div>
 	</body>
 	

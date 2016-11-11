@@ -29,38 +29,38 @@ public class MovieController
 	@RequestMapping(value="/addBasket", method=RequestMethod.POST)
 	public String getFormCommandData(Model model, @ModelAttribute(value="addBasket") Figurine figurineBasket)
 	{
-		return "integrated:userCommand";
+		return "redirect:/userCommand";
 	}
 	
 	//Bouton pour CHERCHER NOM===============================================
 	@RequestMapping(value="/searchName", method=RequestMethod.POST)
 	public String getFormSearcName(Model model, @ModelAttribute(value="searchName") Figurine figurineBasket)
 	{
-		return "integrated:userCommand";
+		return "redirect:/userCommand";
 	}
 	//Bouton pour CHERCHER PRIX===============================================
 	@RequestMapping(value="/searchPrize", method=RequestMethod.POST)
 	public String getFormSearchPrize(Model model, @ModelAttribute(value="searchPrize") Figurine figurineBasket)
 	{
-		return "integrated:userCommand";
+		return "redirect:/userCommand";
 	}
 	//Bouton pour CHERCHER TAILLE===============================================
 	@RequestMapping(value="/searchHeight", method=RequestMethod.POST)
 	public String getFormSearchHeight(Model model, @ModelAttribute(value="searchHeight") Figurine figurineBasket)
 	{
-		return "integrated:userCommand";
+		return "redirect:/userCommand";
 	}
 	//Bouton pour CHERCHER POIDS===============================================
 	@RequestMapping(value="/searchWeight", method=RequestMethod.POST)
 	public String getFormSearchWeight(Model model, @ModelAttribute(value="searchWeight") Figurine figurineBasket)
 	{
-		return "integrated:userCommand";
+		return "redirect:/:userCommand";
 	}
 	//Bouton pour CHERCHER MARQUE===============================================
 	@RequestMapping(value="/searchBrand", method=RequestMethod.POST)
 	public String getFormSearchBRand(Model model, @ModelAttribute(value="searchBrand") Figurine figurineBasket)
 	{
-		return "integrated:userCommand";
+		return "redirect:/userCommand";
 	}
 	
 }
