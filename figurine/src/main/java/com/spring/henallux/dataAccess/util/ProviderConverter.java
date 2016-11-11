@@ -56,7 +56,7 @@ public class ProviderConverter
 		return translationFigurineEntity;
 	}
 	
-	public TranslationFigurine translationFigurineEntitytoTranslationFigurineModel(TranslationFigurineEntity translationFigurineEntity)
+	public TranslationFigurine translationFigurineEntitytoTranslationFigurineModel(TranslationCategoryEntity translationFigurineEntity)
 	{
 		TranslationFigurine translationFigurine = new TranslationFigurine();
 		translationFigurine.setNameIdUser(translationFigurineEntity.getName());
@@ -66,7 +66,7 @@ public class ProviderConverter
 	}
 	
 	//TRANSLATIONCATEGORY =====================================================
-	public TranslationCategoryEntity translationCategoryModeltoTranslationCategoryEntity(TranslationFigurine translationCategory)
+	public TranslationCategoryEntity translationCategoryModeltoTranslationCategoryEntity(TranslationCategory translationCategory)
 	{
 		TranslationCategoryEntity translationCategoryEntity = new TranslationCategoryEntity();
 		translationCategoryEntity.setName(translationCategory.getName());
@@ -198,20 +198,26 @@ public class ProviderConverter
 	}
 	
 	//CATEGORY
-	public TranslationCategoryEntity translationCategoryModeltoTranslationCategoryEntity(TranslationFigurine translationCategory)
+	public CategoryEntity categoryModeltoCategoryEntity(Category category)
 	{
-		TranslationCategoryEntity translationCategoryEntity = new TranslationCategoryEntity();
-		translationCategoryEntity.setFirstName(translationCategory.getName());
+		CategoryEntity categoryEntity = new CategoryEntity();
+		categoryEntity.setIdCategory(category.getIdCategory());
+		categoryEntity.setName(category.getName());
+		categoryEntity.setDateOut(category.getDateOut());
+		categoryEntity.setProducer(category.getProducer());
 		
-		return translationCategoryEntity;
+		return categoryEntity;
 	}
 	
-	public TranslationCategory translationCategoryEntitytoTranslationCategoryModel(TranslationFigurineEntity translationCategoryEntity)
+	public Category categoryEntitytoCategoryModel(CategoryEntity categoryEntity)
 	{
-		TranslationCategory translationCategory = new TranslationCategory();
-		translationCategory.setIdUser(translationCategoryEntity.getName());
+		Category category = new Category();
+		category.setIdCategory(categoryEntity.getIdCategory());
+		category.setName(categoryEntity.getName());
+		category.setDateOut(categoryEntity.getDateOut());
+		category.setProducer(categoryEntity.getProducer());
 		
-		return translationCategory;
+		return category;
 	}
 	
 }
