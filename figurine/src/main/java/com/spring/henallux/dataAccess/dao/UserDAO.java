@@ -20,20 +20,20 @@ public class UserDAO
 	
 	public User save(User user)
 	{
-		UserEntity userEntity = providerConverter.translationCategoryModeltoTranslationCategoryEntity(translationCategory);
-		translationCategoryEntity = translationCategoryRepository.save(translationCategoryEntity);
-		return providerConverter.translationCategoryEntitytoTranslationCategoryModel(translationCategoryEntity);
+		UserEntity userEntity = providerConverter.userModeltoUserEntity(user);
+		userEntity = userRepository.save(userEntity);
+		return providerConverter.userEntitytonUserModel(userEntity);
 	}
 	
-	public ArrayList<TranslationCategory> getAllTranslationCategories()
+	public ArrayList<User> getAllUsers()
 	{
-		List <TranslationCategoryEntity> translationCategoryEntities = translationCategoryRepository.findAll();
-		ArrayList <TranslationCategory> translationCategories = new ArrayList<>();
-		for (TranslationCategoryEntity entity : translationCategoryEntities)
+		List <UserEntity> userEntities = userRepository.findAll();
+		ArrayList <User> users = new ArrayList<>();
+		for (UserEntity entity : userEntities)
 		{
-			TranslationCategory translationCategory = providerConverter.translationCategoryEntitytoTranslationCategoryModel(entity);
-			translationCategories.add(translationCategory);
+			User user = providerConverter.userEntitytonUserModel(entity);
+			users.add(user);
 		}
-		return translationCategories;
+		return users;
 	}
 }
