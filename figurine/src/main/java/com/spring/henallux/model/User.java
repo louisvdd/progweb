@@ -84,6 +84,16 @@ public class User
 	
 	//SETTERS ========================================================
 	
+	public void setIdUser(String idUser) 
+	{
+		this.idUser = idUser;
+	}
+
+	public void setCommand(Command command) 
+	{
+		this.command = command;
+	}
+	
 	public void setFirstName(String f)
 	{
 		firstName = f;

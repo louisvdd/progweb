@@ -20,7 +20,7 @@ public class Promotion
 		return idPromotion;
 	}
 	
-	public double amountPourc()
+	public double getAmountPourc()
 	{
 		return amountPourc;
 	}

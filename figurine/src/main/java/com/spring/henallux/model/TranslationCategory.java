@@ -1,6 +1,6 @@
 package com.spring.henallux.model;
 
-public class TransaltionCategory 
+public class TranslationCategory 
 {
 	private String name;
 
