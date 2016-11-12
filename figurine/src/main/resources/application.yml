@@ -7,4 +7,4 @@ server:
 spring:
   datasource:
     password: damienlouis
-    url: jdbc:mysql://localhost:3306/figurinebd?user=root
+    url: jdbc:mysql://localhost:3306/figurinedb?user=root
