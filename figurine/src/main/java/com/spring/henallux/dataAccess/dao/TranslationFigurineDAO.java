@@ -5,7 +5,7 @@ import java.util.*;
 import org.junit.experimental.categories.Category;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
+/*
 import com.spring.henallux.dataAccess.util.ProviderConverter;
 import com.spring.henallux.model.*;
 
@@ -37,3 +37,4 @@ public class TranslationFigurineDAO
 		return translationFigurines;
 	}
 }
+*/

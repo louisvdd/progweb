@@ -1,5 +1,5 @@
 package com.spring.henallux.dataAccess.dao;
-
+/*
 import java.util.*;
 
 import org.junit.experimental.categories.Category;
@@ -37,3 +37,4 @@ public class TranslationCategoryDAO
 		return translationCategories;
 	}
 }
+*/

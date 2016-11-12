@@ -10,10 +10,10 @@ public class CategoryEntity
 {
 	@Id
 	@Column(name="name")
-	private int name;
+	private String name;
 	
 	@Column(name="idCategory")
-	private String idCategory;
+	private int idCategory;
 	
 	@Column(name="dateOut")
 	private Date dateOut;
@@ -21,4 +21,5 @@ public class CategoryEntity
 	@Column(name="producer")
 	private String producer;
 }
+
 */

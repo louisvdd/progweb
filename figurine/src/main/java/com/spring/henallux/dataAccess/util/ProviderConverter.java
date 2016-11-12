@@ -3,7 +3,7 @@ package com.spring.henallux.dataAccess.util;
 import org.springframework.stereotype.Component;
 import com.spring.henallux.dataAccess.entity.*;
 import com.spring.henallux.model.*;
-
+/*
 @Component
 public class ProviderConverter 
 {
@@ -221,3 +221,4 @@ public class ProviderConverter
 	}
 	
 }
+*/
