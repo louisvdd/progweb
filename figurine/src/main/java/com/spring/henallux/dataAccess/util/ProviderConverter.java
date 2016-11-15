@@ -3,7 +3,7 @@ package com.spring.henallux.dataAccess.util;
 import org.springframework.stereotype.Component;
 import com.spring.henallux.dataAccess.entity.*;
 import com.spring.henallux.model.*;
-/*
+
 @Component
 public class ProviderConverter 
 {
@@ -50,16 +50,16 @@ public class ProviderConverter
 	public TranslationFigurineEntity translationFigurineModeltoTranslationFigurineEntity(TranslationFigurine translationFigurine)
 	{
 		TranslationFigurineEntity translationFigurineEntity = new TranslationFigurineEntity();
-		translationFigurineEntity.setNameIdUser(translationFigurine.getName());
+		translationFigurineEntity.setName(translationFigurine.getName());
 		translationFigurineEntity.setDescription(translationFigurine.getDescription());
 		
 		return translationFigurineEntity;
 	}
 	
-	public TranslationFigurine translationFigurineEntitytoTranslationFigurineModel(TranslationCategoryEntity translationFigurineEntity)
+	public TranslationFigurine translationFigurineEntitytoTranslationFigurineModel(TranslationFigurineEntity translationFigurineEntity)
 	{
 		TranslationFigurine translationFigurine = new TranslationFigurine();
-		translationFigurine.setNameIdUser(translationFigurineEntity.getName());
+		translationFigurine.setName(translationFigurineEntity.getName());
 		translationFigurine.setDescription(translationFigurineEntity.getDescription());
 		
 		return translationFigurine;
@@ -87,7 +87,7 @@ public class ProviderConverter
 	{
 		PromotionEntity promotionEntity = new PromotionEntity();
 		promotionEntity.setIdPromotion(promotion.getIdPromotion());
-		promotionEntity.setamountPourc(promotion.getAmountPourc());
+		promotionEntity.setAmountPourc(promotion.getAmountPourc());
 		promotionEntity.setDateBegin(promotion.getDateBegin());
 		promotionEntity.setDateEnd(promotion.getDateEnd());
 		
@@ -98,7 +98,7 @@ public class ProviderConverter
 	{
 		Promotion promotion = new Promotion();
 		promotion.setIdPromotion(promotionEntity.getIdPromotion());
-		promotion.setamountPourc(promotionEntity.getAmountPourc());
+		promotion.setAmountPourc(promotionEntity.getAmountPourc());
 		promotion.setDateBegin(promotionEntity.getDateBegin());
 		promotion.setDateEnd(promotionEntity.getDateEnd());
 		
@@ -109,8 +109,8 @@ public class ProviderConverter
 	public LanguageEntity languageCategoryModeltoLanguageEntity(Language language)
 	{
 		LanguageEntity languageEntity = new LanguageEntity();
-		languageEntity.setFirstName(language.getIdLanguage());
-		languageEntity.setFirstName(language.getName());
+		languageEntity.setIdLanguage(language.getIdLanguage());
+		languageEntity.setName(language.getName());
 		
 		return languageEntity;
 	}
@@ -118,8 +118,8 @@ public class ProviderConverter
 	public Language languageEntitytoLanguageModel(LanguageEntity languageEntity)
 	{
 		Language language = new Language();
-		language.setFirstName(languageEntity.getIdLanguage());
-		language.setFirstName(languageEntity.getName());
+		language.setIdLanguage(languageEntity.getIdLanguage());
+		language.setName(languageEntity.getName());
 		
 		return language;
 	}
@@ -150,7 +150,7 @@ public class ProviderConverter
 		figurine.setWeight(figurineEntity.getWeight());
 		figurine.setSize(figurineEntity.getSize());
 		figurine.setBrand(figurineEntity.getBrand());
-		figurine.setPainting(figurineEntity.getPainting());
+		figurine.setPainting(figurineEntity.isPainting());
 		figurine.setNbStock(figurineEntity.getNbStock());
 		figurine.setCost(figurineEntity.getCost());
 		
@@ -163,7 +163,7 @@ public class ProviderConverter
 		CommandLineEntity commandLineEntity = new CommandLineEntity();
 		commandLineEntity.setNbFigurine(commandeLine.getNbFigurine());
 		commandLineEntity.setPrizeCommand(commandeLine.getPrizeCommand());
-		commandLineEntity.setPromotion(commandeLine.getPrizeCommand());
+		commandLineEntity.setPromotion(commandeLine.getPromotion());
 		
 		return commandLineEntity;
 	}
@@ -190,7 +190,7 @@ public class ProviderConverter
 	
 	public Command commandEntitytoCommandModel(CommandEntity commandEntity)
 	{
-		CommandEntity command = new CommandEntity();
+		Command command = new Command();
 		command.setIdCommand(commandEntity.getIdCommand());
 		command.setDateCommand(commandEntity.getDateCommand());
 		
@@ -221,4 +221,3 @@ public class ProviderConverter
 	}
 	
 }
-*/

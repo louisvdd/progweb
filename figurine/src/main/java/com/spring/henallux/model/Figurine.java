@@ -65,6 +65,12 @@ public class Figurine
 	
 	
 	//SETTER ==================================================================
+	
+	public void setIdFigurine(int id)
+	{
+		idFigurine = id;
+	}
+	
 	public void setName(String n)
 	{
 		name = n;

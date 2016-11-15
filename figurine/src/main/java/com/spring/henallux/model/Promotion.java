@@ -36,6 +36,11 @@ public class Promotion
 	}
 	
 	//SETTERS =====================================================
+	public void setIdPromotion(int id)
+	{
+		idPromotion = id;
+	}
+	
 	public void setAmountPourc(double a)
 	{
 		amountPourc = a;
