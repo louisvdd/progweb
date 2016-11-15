@@ -10,7 +10,7 @@
 	
 	<body>
 		<div class="container"> 
-			Commande validé
+			<h1 class="header center rbwd-red-text text-base thin-text">Commande validé</h1>
 	    </div>
 	</body>
 	

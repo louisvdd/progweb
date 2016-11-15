@@ -10,7 +10,7 @@
 	
 	<body>
 		<div class="container"> 
-			Bravo vous êtes connecté   
+			<h1 class="header center rbwd-red-text text-base thin-text">Bravo vous êtes connecté</h1> 
 	    </div>
 	</body>
 	
