@@ -32,27 +32,12 @@ public class UserDAO
 		}
 		return users;
 	}
-	/*
-	@Autowired
-	private ProviderConverter providerConverter;
 	
 	public User save(User user)
 	{
 		UserEntity userEntity = providerConverter.userModeltoUserEntity(user);
 		userEntity = userRepository.save(userEntity);
-		return providerConverter.userEntitytonUserModel(userEntity);
+		return providerConverter.userEntitytoUserModel(userEntity);
 	}
-	
-	public ArrayList<User> getAllUsers()
-	{
-		List <UserEntity> userEntities = userRepository.findAll();
-		ArrayList <User> users = new ArrayList<>();
-		for (UserEntity entity : userEntities)
-		{
-			User user = providerConverter.userEntitytonUserModel(entity);
-			users.add(user);
-		}
-		return users;
-	}
-	*/
+
 }
