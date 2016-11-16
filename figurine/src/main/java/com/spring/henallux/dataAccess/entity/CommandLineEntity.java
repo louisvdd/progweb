@@ -5,7 +5,7 @@ import javax.persistence.*;
 import com.spring.henallux.model.Promotion;
 
 @Entity
-@Table(name="CommandLine")
+@Table(name="commandline")
 public class CommandLineEntity 
 {
 	@Id
@@ -16,7 +16,7 @@ public class CommandLineEntity
 	private double prizeCommand;
 	
 	@Column(name="promotion")
-	private Promotion promotion;
+	private int promotion;
 
 	public int getNbFigurine() {
 		return nbFigurine;
@@ -34,11 +34,11 @@ public class CommandLineEntity
 		this.prizeCommand = prizeCommand;
 	}
 
-	public Promotion getPromotion() {
+	public int getPromotion() {
 		return promotion;
 	}
 
-	public void setPromotion(Promotion promotion) {
+	public void setPromotion(int promotion) {
 		this.promotion = promotion;
 	}
 	

@@ -5,7 +5,7 @@ import java.util.Date;
 import javax.persistence.*;
 
 @Entity
-@Table(name="Command")
+@Table(name="command")
 public class CommandEntity 
 {
 	@Id

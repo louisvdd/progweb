@@ -5,7 +5,7 @@ import java.util.Date;
 import javax.persistence.*;
 
 @Entity
-@Table(name="Category")
+@Table(name="category")
 public class CategoryEntity 
 {
 	@Id

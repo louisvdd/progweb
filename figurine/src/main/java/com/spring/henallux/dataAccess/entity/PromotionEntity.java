@@ -4,7 +4,7 @@ import java.util.Date;
 import javax.persistence.*;
 
 @Entity
-@Table(name="Promotion")
+@Table(name="promotion")
 public class PromotionEntity 
 {
 	@Id

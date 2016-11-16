@@ -3,7 +3,7 @@ package com.spring.henallux.dataAccess.entity;
 import javax.persistence.*;
 
 @Entity
-@Table(name="TranslationCategory")
+@Table(name="translationcategory")
 public class TranslationCategoryEntity 
 {
 	@Id

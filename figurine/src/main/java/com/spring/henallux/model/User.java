@@ -13,7 +13,7 @@ public class User
 	private String postalCode;
 	private String country;
 	private String password;
-	private Command command;
+	private int command;
 	
 	public User()
 	{
@@ -77,7 +77,7 @@ public class User
 		return password;
 	}
 	
-	public Command getCommand()
+	public int getCommand()
 	{
 		return command;
 	}
@@ -89,7 +89,7 @@ public class User
 		this.idUser = idUser;
 	}
 
-	public void setCommand(Command command) 
+	public void setCommand(int command) 
 	{
 		this.command = command;
 	}

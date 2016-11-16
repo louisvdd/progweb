@@ -5,26 +5,26 @@ import javax.persistence.*;
 import com.spring.henallux.model.Command;
 
 @Entity
-@Table(name="User")
+@Table(name="user")
 public class UserEntity 
 {
 	@Id
-	@Column(name="idUser")
+	@Column(name="iduser")
 	private String idUser;
 	
-	@Column(name="firstName")
+	@Column(name="firstname")
 	private String firstName;
 	
-	@Column(name="lastName")
+	@Column(name="lastname")
 	private String lastName;
 	
 	@Column(name="email")
 	private String email;
 	
-	@Column(name="numTel")
+	@Column(name="numtel")
 	private String numTel;
 	
-	@Column(name="numFax")
+	@Column(name="numfax")
 	private String numFax;
 	
 	@Column(name="street")
@@ -33,7 +33,7 @@ public class UserEntity
 	@Column(name="city")
 	private String city;
 	
-	@Column(name="postalCode")
+	@Column(name="postalcode")
 	private String postalCode;
 	
 	@Column(name="country")
@@ -43,7 +43,7 @@ public class UserEntity
 	private String password;
 	
 	@Column(name="command")
-	private Command command;
+	private int command;
 
 	public String getIdUser() {
 		return idUser;
@@ -133,11 +133,11 @@ public class UserEntity
 		this.password = password;
 	}
 
-	public Command getCommand() {
+	public int getCommand() {
 		return command;
 	}
 
-	public void setCommand(Command command) {
+	public void setCommand(int command) {
 		this.command = command;
 	}
 	

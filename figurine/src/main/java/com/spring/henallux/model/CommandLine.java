@@ -4,7 +4,7 @@ public class CommandLine
 {
 	private int nbFigurine;
 	private double prizeCommand;
-	private Promotion promotion;
+	private int promotion;
 	
 	public CommandLine()
 	{
@@ -22,7 +22,7 @@ public class CommandLine
 		return prizeCommand;
 	}
 	
-	public Promotion getPromotion()
+	public int getPromotion()
 	{
 		return promotion;
 	}
@@ -38,7 +38,7 @@ public class CommandLine
 		prizeCommand = p;
 	}
 	
-	public void setPromotion(Promotion pr)
+	public void setPromotion(int pr)
 	{
 		promotion = pr;
 	}

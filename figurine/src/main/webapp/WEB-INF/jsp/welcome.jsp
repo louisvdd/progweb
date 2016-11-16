@@ -20,7 +20,7 @@
 	
 	
 	<head>
-		<title><spring:message code="animationJapanese"/></title>
+		<title><spring:message code="reception"/></title>
 		<script type="text/javascript">
 		var slider = document.getElementById('test5');
 		  noUiSlider.create(slider, {
