@@ -3,22 +3,32 @@ package com.spring.henallux.dataAccess.entity;
 import java.util.Date;
 
 import javax.persistence.*;
+import javax.validation.constraints.*;
 
 @Entity
 @Table(name="category")
 public class CategoryEntity 
 {
 	@Id
-	@Column(name="idCategory")
+	@Min(0)
+	@Max(1000)
+	@NotNull
+	@Column(name="idcategory")
 	private int idCategory;
 	
 	@Column(name="name")
+	@NotNull
+	@Size(min=5, max=30)
 	private String name;	
 	
-	@Column(name="dateOut")
+	@Column(name="dateout")
+	@NotNull
+	@Past
 	private Date dateOut;
 	
 	@Column(name="producer")
+	@NotNull
+	@Size(min=5, max=30)
 	private String producer;
 
 	public int getIdCategory() {

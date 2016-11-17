@@ -3,16 +3,22 @@ package com.spring.henallux.dataAccess.entity;
 import java.util.Date;
 
 import javax.persistence.*;
+import javax.validation.constraints.*;
 
 @Entity
 @Table(name="command")
 public class CommandEntity 
 {
 	@Id
-	@Column(name="idCommand")
+	@Min(1)
+	@Max(1000)
+	@NotNull
+	@Column(name="idcommand")
 	private int idCommand;
 	
-	@Column(name="dateCommand")
+	@NotNull
+	@Past
+	@Column(name="datecommand")
 	private Date dateCommand;
 
 	public int getIdCommand() {

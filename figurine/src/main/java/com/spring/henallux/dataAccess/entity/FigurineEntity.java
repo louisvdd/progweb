@@ -1,36 +1,59 @@
 package com.spring.henallux.dataAccess.entity;
 
 import javax.persistence.*;
+import javax.validation.constraints.*;
 
 @Entity
 @Table(name="figurine")
 public class FigurineEntity 
 {
 	@Id
-	@Column(name="idFigurine")
+	@NotNull
+	@Min(1)
+	@Max(1000)
+	@Column(name="idfigurine")
 	private int idFigurine;
 	
+	@NotNull
+	@Size(min=5, max=30)
 	@Column(name="name")
 	private String name;
 	
+	@NotNull
+	@Size(min=10, max=300)
 	@Column(name="description")
 	private String description;
 	
+	@NotNull
+	@DecimalMin("1.00")
+	@DecimalMax("100.00")
 	@Column(name="size")
 	private double size;
 	
+	@NotNull
+	@DecimalMin("1.00")
+	@DecimalMax("10000.00")
 	@Column(name="weight")
 	private double weight;
 	
+	@NotNull
+	@Size(min=5, max=30)
 	@Column(name="brand")
 	private String brand;
 	
+	@NotNull
 	@Column(name="painting")
 	private boolean painting;
 	
-	@Column(name="nbStock")
+	@NotNull
+	@Min(1)
+	@Max(1000)
+	@Column(name="nbstock")
 	private int nbStock;
 	
+	@NotNull
+	@DecimalMin("1.00")
+	@DecimalMax("10000.00")
 	@Column(name="cost")
 	private double cost;
 

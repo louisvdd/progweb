@@ -1,15 +1,21 @@
 package com.spring.henallux.dataAccess.entity;
 
 import javax.persistence.*;
+import javax.validation.constraints.*;
 
 @Entity
 @Table(name="language")
 public class LanguageEntity 
 {
 	@Id
-	@Column(name="idLanguage")
+	@NotNull
+	@Min(1)
+	@Max(1000)
+	@Column(name="idlanguage")
 	private int idLanguage;
 	
+	@NotNull
+	@Size(min=5, max=30)
 	@Column(name="name")
 	private String name;
 

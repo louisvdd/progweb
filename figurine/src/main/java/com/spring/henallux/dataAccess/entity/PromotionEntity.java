@@ -2,22 +2,33 @@ package com.spring.henallux.dataAccess.entity;
 
 import java.util.Date;
 import javax.persistence.*;
+import javax.validation.constraints.*;
 
 @Entity
 @Table(name="promotion")
 public class PromotionEntity 
 {
 	@Id
-	@Column(name="idPromotion")
+	@NotNull
+	@Min(1)
+	@Max(1000)
+	@Column(name="idpromotion")
 	private int idPromotion;
 	
-	@Column(name="amountPourc")
+	@NotNull
+	@DecimalMin("0.00")
+	@DecimalMax("100.00")
+	@Column(name="amountpourc")
 	private double amountPourc;
 	
-	@Column(name="dateBegin")
+	@NotNull
+	@Past
+	@Column(name="datebegin")
 	private Date dateBegin;
 	
-	@Column(name="dateEnd")
+	@NotNull
+	@Future
+	@Column(name="dateend")
 	private Date dateEnd;
 
 	public int getIdPromotion() {
