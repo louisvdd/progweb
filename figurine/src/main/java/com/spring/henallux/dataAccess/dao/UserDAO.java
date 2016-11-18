@@ -9,7 +9,7 @@ import com.spring.henallux.dataAccess.entity.*;
 import com.spring.henallux.dataAccess.repository.*;
 
 import com.spring.henallux.dataAccess.util.ProviderConverter;
-import com.spring.henallux.model.User;
+import com.spring.henallux.model.*;
 
 @Service
 @Transactional

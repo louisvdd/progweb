@@ -1,7 +1,10 @@
 package com.spring.henallux.model;
 
+//import javax.validation.constraints.*;
+
 public class User 
 {
+	//@NotNull
 	private String idUser;
 	private String firstName;
 	private String lastName;

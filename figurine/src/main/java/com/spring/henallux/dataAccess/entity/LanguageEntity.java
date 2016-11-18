@@ -7,25 +7,29 @@ import javax.persistence.*;
 public class LanguageEntity 
 {
 	@Id
-	@Column(name="idLanguage")
+	@Column(name="idlanguage")
 	private int idLanguage;
 	
 	@Column(name="name")
 	private String name;
 
-	public int getIdLanguage() {
+	public int getIdLanguage() 
+	{
 		return idLanguage;
 	}
 
-	public void setIdLanguage(int idLanguage) {
+	public void setIdLanguage(int idLanguage) 
+	{
 		this.idLanguage = idLanguage;
 	}
 
-	public String getName() {
+	public String getName() 
+	{
 		return name;
 	}
 
-	public void setName(String name) {
+	public void setName(String name) 
+	{
 		this.name = name;
 	}
 	

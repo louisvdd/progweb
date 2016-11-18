@@ -8,47 +8,55 @@ import javax.persistence.*;
 public class PromotionEntity 
 {
 	@Id
-	@Column(name="idPromotion")
+	@Column(name="idpromotion")
 	private int idPromotion;
 	
-	@Column(name="amountPourc")
+	@Column(name="amountpourc")
 	private double amountPourc;
 	
-	@Column(name="dateBegin")
+	@Column(name="datebegin")
 	private Date dateBegin;
 	
-	@Column(name="dateEnd")
+	@Column(name="dateend")
 	private Date dateEnd;
 
-	public int getIdPromotion() {
+	public int getIdPromotion() 
+	{
 		return idPromotion;
 	}
 
-	public void setIdPromotion(int idPromotion) {
+	public void setIdPromotion(int idPromotion) 
+	{
 		this.idPromotion = idPromotion;
 	}
 
-	public double getAmountPourc() {
+	public double getAmountPourc() 
+	{
 		return amountPourc;
 	}
 
-	public void setAmountPourc(double amountPourc) {
+	public void setAmountPourc(double amountPourc) 
+	{
 		this.amountPourc = amountPourc;
 	}
 
-	public Date getDateBegin() {
+	public Date getDateBegin() 
+	{
 		return dateBegin;
 	}
 
-	public void setDateBegin(Date dateBegin) {
+	public void setDateBegin(Date dateBegin) 
+	{
 		this.dateBegin = dateBegin;
 	}
 
-	public Date getDateEnd() {
+	public Date getDateEnd() 
+	{
 		return dateEnd;
 	}
 
-	public void setDateEnd(Date dateEnd) {
+	public void setDateEnd(Date dateEnd) 
+	{
 		this.dateEnd = dateEnd;
 	}	
 }

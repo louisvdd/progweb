@@ -9,21 +9,24 @@ import javax.persistence.*;
 public class CommandEntity 
 {
 	@Id
-	@Column(name="idCommand")
+	@Column(name="idcommand")
 	private int idCommand;
 	
-	@Column(name="dateCommand")
+	@Column(name="datecommand")
 	private Date dateCommand;
 
-	public int getIdCommand() {
+	public int getIdCommand() 
+	{
 		return idCommand;
 	}
 
-	public void setIdCommand(int idCommand) {
+	public void setIdCommand(int idCommand) 
+	{
 		this.idCommand = idCommand;
 	}
 
-	public Date getDateCommand() {
+	public Date getDateCommand() 
+	{
 		return dateCommand;
 	}
 

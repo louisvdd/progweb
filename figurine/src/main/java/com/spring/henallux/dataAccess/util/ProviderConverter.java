@@ -83,10 +83,13 @@ public class ProviderConverter
 		return translationCategoryEntity;
 	}
 	
-	public TranslationCategory translationCategoryEntitytoTranslationCategoryModel(TranslationFigurineEntity translationCategoryEntity)
+	public TranslationCategory translationCategoryEntitytoTranslationCategoryModel(TranslationCategoryEntity translationCategoryEntity)
 	{
 		TranslationCategory translationCategory = new TranslationCategory();
+		translationCategory.setIdTranslationCategory(translationCategoryEntity.getIdTranslationCategory());
 		translationCategory.setName(translationCategoryEntity.getName());
+		translationCategory.setLanguage(translationCategoryEntity.getLanguage());
+		translationCategory.setCategory(translationCategoryEntity.getCategory());
 		
 		return translationCategory;
 	}
@@ -115,7 +118,7 @@ public class ProviderConverter
 	}
 	
 	//LANGUAGE ========================================================================
-	public LanguageEntity languageCategoryModeltoLanguageEntity(Language language)
+	public LanguageEntity languageModeltoLanguageEntity(Language language)
 	{
 		LanguageEntity languageEntity = new LanguageEntity();
 		languageEntity.setIdLanguage(language.getIdLanguage());
@@ -183,9 +186,12 @@ public class ProviderConverter
 	public CommandLine commandLineEntitytoCommandLineModel(CommandLineEntity commandLineEntity)
 	{
 		CommandLine commandeLine = new CommandLine();
-		commandeLine.setNbFigurine(commandeLine.getNbFigurine());
-		commandeLine.setPrizeCommand(commandeLine.getPrizeCommand());
-		commandeLine.setPromotion(commandeLine.getPromotion());
+		commandeLine.setIdCommandeLine(commandLineEntity.getIdCommandeLine());
+		commandeLine.setNbFigurine(commandLineEntity.getNbFigurine());
+		commandeLine.setPrizeCommand(commandLineEntity.getPrizeCommand());
+		commandeLine.setPromotion(commandLineEntity.getPromotion());
+		commandeLine.setFigurine(commandLineEntity.getFigurine());
+		commandeLine.setCommand(commandLineEntity.getCommand());
 		
 		return commandeLine;
 	}

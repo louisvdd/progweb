@@ -1,15 +1,20 @@
 com\spring\henallux\Application.class
 com\spring\henallux\model\User.class
 com\spring\henallux\controller\ErrorConnectionController.class
+com\spring\henallux\dataAccess\dao\CategoryDAO.class
 com\spring\henallux\controller\UserRegistrationController.class
 com\spring\henallux\model\Promotion.class
 com\spring\henallux\controller\UserConnectionController.class
+com\spring\henallux\dataAccess\dao\LanguageDAO.class
+com\spring\henallux\dataAccess\dao\FigurineDAO.class
+com\spring\henallux\dataAccess\dao\TranslationCategoryDAO.class
 com\spring\henallux\dataAccess\entity\CommandLineEntity.class
 com\spring\henallux\dataAccess\entity\LanguageEntity.class
 com\spring\henallux\model\Category.class
 com\spring\henallux\dataAccess\entity\UserEntity.class
 com\spring\henallux\dataAccess\repository\LanguageRepository.class
 com\spring\henallux\dataAccess\repository\CommandRepository.class
+com\spring\henallux\dataAccess\dao\TranslationFigurineDAO.class
 com\spring\henallux\dataAccess\repository\CommandLineRepository.class
 com\spring\henallux\model\TranslationFigurine.class
 com\spring\henallux\dataAccess\repository\TranslationFigurineRepository.class
@@ -23,6 +28,8 @@ com\spring\henallux\model\Command.class
 com\spring\henallux\model\TranslationCategory.class
 com\spring\henallux\dataAccess\util\ProviderConverter.class
 com\spring\henallux\config\TilesConfig.class
+com\spring\henallux\dataAccess\dao\PromotionDAO.class
+com\spring\henallux\dataAccess\dao\CommandLineDAO.class
 com\spring\henallux\dataAccess\repository\TranslationCategoryRepository.class
 com\spring\henallux\service\RegistrationService.class
 com\spring\henallux\controller\UserCommandController.class
@@ -42,3 +49,4 @@ com\spring\henallux\dataAccess\entity\TranslationFigurineEntity.class
 com\spring\henallux\dataAccess\entity\CommandEntity.class
 com\spring\henallux\model\Figurine.class
 com\spring\henallux\model\Language.class
+com\spring\henallux\dataAccess\dao\CommandDAO.class

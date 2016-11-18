@@ -7,7 +7,7 @@ import javax.persistence.*;
 public class FigurineEntity 
 {
 	@Id
-	@Column(name="idFigurine")
+	@Column(name="idfigurine")
 	private int idFigurine;
 	
 	@Column(name="name")
@@ -28,81 +28,99 @@ public class FigurineEntity
 	@Column(name="painting")
 	private boolean painting;
 	
-	@Column(name="nbStock")
+	@Column(name="nbstock")
 	private int nbStock;
 	
 	@Column(name="cost")
 	private double cost;
 
-	public int getIdFigurine() {
+	public int getIdFigurine() 
+	{
 		return idFigurine;
 	}
 
-	public void setIdFigurine(int idFigurine) {
+	public void setIdFigurine(int idFigurine) 
+	{
 		this.idFigurine = idFigurine;
 	}
 
-	public String getName() {
+	public String getName() 
+	{
 		return name;
 	}
 
-	public void setName(String name) {
+	public void setName(String name) 
+	{
 		this.name = name;
 	}
 
-	public String getDescription() {
+	public String getDescription() 
+	{
 		return description;
 	}
 
-	public void setDescription(String description) {
+	public void setDescription(String description) 
+	{
 		this.description = description;
 	}
 
-	public double getSize() {
+	public double getSize() 
+	{
 		return size;
 	}
 
-	public void setSize(double size) {
+	public void setSize(double size) 
+	{
 		this.size = size;
 	}
 
-	public double getWeight() {
+	public double getWeight() 
+	{
 		return weight;
 	}
 
-	public void setWeight(double weight) {
+	public void setWeight(double weight) 
+	{
 		this.weight = weight;
 	}
 
-	public String getBrand() {
+	public String getBrand() 
+	{
 		return brand;
 	}
 
-	public void setBrand(String brand) {
+	public void setBrand(String brand) 
+	{
 		this.brand = brand;
 	}
 
-	public boolean isPainting() {
+	public boolean isPainting() 
+	{
 		return painting;
 	}
 
-	public void setPainting(boolean painting) {
+	public void setPainting(boolean painting) 
+	{
 		this.painting = painting;
 	}
 
-	public int getNbStock() {
+	public int getNbStock() 
+	{
 		return nbStock;
 	}
 
-	public void setNbStock(int nbStock) {
+	public void setNbStock(int nbStock) 
+	{
 		this.nbStock = nbStock;
 	}
 
-	public double getCost() {
+	public double getCost() 
+	{
 		return cost;
 	}
 
-	public void setCost(double cost) {
+	public void setCost(double cost) 
+	{
 		this.cost = cost;
 	}
 }

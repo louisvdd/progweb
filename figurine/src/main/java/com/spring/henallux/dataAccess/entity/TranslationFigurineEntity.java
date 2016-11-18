@@ -7,7 +7,7 @@ import javax.persistence.*;
 public class TranslationFigurineEntity 
 {
 	@Id
-	@Column(name="idTranslationFigurine")
+	@Column(name="idTranslationfigurine")
 	private int idTranslationFigurine;
 	
 	@Column(name="name")

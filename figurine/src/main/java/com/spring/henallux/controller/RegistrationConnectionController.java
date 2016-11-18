@@ -2,6 +2,8 @@ package com.spring.henallux.controller;
 
 import java.util.ArrayList;
 
+//import java.util.ArrayList;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -33,9 +35,19 @@ public class RegistrationConnectionController
 		String userName = userConnection.getIdUser();
 		String userPassword = userConnection.getPassword();
 		
-		System.out.println(userName+" "+userPassword);
+		ArrayList <User> users = userDAO.getUsers();
+		int i = 0;
 		
-		if(userDAO.getUsers().contains(userName) && userDAO.getUsers().contains(userPassword))
+		while(i < users.size() && users.get(i).getIdUser().equals(userName)==false)
+		{
+			i++;
+		}	
+		
+		//C'EST DEGUEULASSE!!!!! Il faut changer ça
+		if(i==users.size())
+			i--;
+		
+		if(users.get(i).getIdUser().equals(userName) && users.get(i).getPassword().equals(userPassword))
 			return "redirect:/userConnection";
 		
 		return "redirect:/errorConnection";

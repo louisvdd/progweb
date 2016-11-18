@@ -1,14 +1,18 @@
 package com.spring.henallux.dataAccess.dao;
-/*
+
 import java.util.*;
 
-import org.junit.experimental.categories.Category;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+import com.spring.henallux.dataAccess.entity.*;
+import com.spring.henallux.dataAccess.repository.*;
 
-import com.spring.henallux.model.Command;
+import com.spring.henallux.dataAccess.util.ProviderConverter;
+import com.spring.henallux.model.*;
 
 @Service
+@Transactional
 public class CommandLineDAO 
 {
 	@Autowired
@@ -21,14 +25,14 @@ public class CommandLineDAO
 	{
 		CommandLineEntity commandLineEntity = providerConverter.commandLineModeltoCommandLineEntity(commandLine);
 		commandLineEntity = commandLineRepository.save(commandLineEntity);
-		return providerConverter.commandLineEntitytoCommandModel(commandLineEntity);
+		return providerConverter.commandLineEntitytoCommandLineModel(commandLineEntity);
 	}
 	
-	public ArrayList<Command> getAllCommandLines()
+	public ArrayList<CommandLine> getAllCommandLines()
 	{
-		List <CommandLineEntity> commandeLIneEntities = commandLineRepository.findAll();
+		List <CommandLineEntity> commandLineEntities = commandLineRepository.findAll();
 		ArrayList <CommandLine> commandLines = new ArrayList<>();
-		for (CommandLineEntity entity : commandeLineEntities)
+		for (CommandLineEntity entity : commandLineEntities)
 		{
 			CommandLine commandLine = providerConverter.commandLineEntitytoCommandLineModel(entity);
 			commandLines.add(commandLine);
@@ -36,4 +40,3 @@ public class CommandLineDAO
 		return commandLines;
 	}
 }
-*/

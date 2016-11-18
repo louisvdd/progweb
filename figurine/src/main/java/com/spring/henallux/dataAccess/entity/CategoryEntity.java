@@ -9,47 +9,55 @@ import javax.persistence.*;
 public class CategoryEntity 
 {
 	@Id
-	@Column(name="idCategory")
+	@Column(name="idcategory")
 	private int idCategory;
 	
 	@Column(name="name")
 	private String name;	
 	
-	@Column(name="dateOut")
+	@Column(name="dateout")
 	private Date dateOut;
 	
 	@Column(name="producer")
 	private String producer;
 
-	public int getIdCategory() {
+	public int getIdCategory() 
+	{
 		return idCategory;
 	}
 
-	public void setIdCategory(int idCategory) {
+	public void setIdCategory(int idCategory) 
+	{
 		this.idCategory = idCategory;
 	}
 
-	public String getName() {
+	public String getName() 
+	{
 		return name;
 	}
 
-	public void setName(String name) {
+	public void setName(String name) 
+	{
 		this.name = name;
 	}
 
-	public Date getDateOut() {
+	public Date getDateOut() 
+	{
 		return dateOut;
 	}
 
-	public void setDateOut(Date dateOut) {
+	public void setDateOut(Date dateOut) 
+	{
 		this.dateOut = dateOut;
 	}
 
-	public String getProducer() {
+	public String getProducer() 
+	{
 		return producer;
 	}
 
-	public void setProducer(String producer) {
+	public void setProducer(String producer) 
+	{
 		this.producer = producer;
 	}
 	
