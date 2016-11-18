@@ -1,25 +1,25 @@
-//Promotion
+//Promotion OK
 create table Promotion
 (
 	idPromotion int not null,
-	pourcAmount float not null check(pourAmount > 0),
-	startDate date not null,
-	endDate date not null,
+	amountPourc float not null check (amountPourc > 0),
+	dateBegin date not null,
+	dateEnd date not null,
 
 	constraint pk_Promotion primary key(idPromotion),
 	check(startDate < enDate)	
 );
 
-//Figurine
+//Figurine OK
 create table Figurine
 (
 	idFigurine int not null,
 	name varchar(50) not null,
 	description varchar(300) not null,
-	height float not null,
-	weight int not null,
+	size float not null,
+	weight float not null,
 	brand varchar(50) not null,
-	pint boolean not null,
+	painting boolean not null,
 	nbStock int not null,
 	cost float not null,
 
@@ -27,48 +27,18 @@ create table Figurine
 	check(cost > 0)
 );
 
-//Marque
-create table Brand
-(
-	idBrand int not null,
-	name varchar(50) not null,
-
-	constraint pk_Brand primary key(idBrand)
-);
-
-/Catégorie
+//Catégorie OK
 create table Category
 (
 	idCategory int not null,
 	name varchar(50) not null,
-	outDate date not null,
+	dateOut date not null,
 	producer varchar(50) not null,
 
 	constraint pk_Category primary key(idCategory)
 );
 
-//Ligne commande
-create table CommandLine
-(
-	nbFigurine int not null,
-	prizeCommand float not null,
-	idPromotionFK int not null
-	
-	constraint fk_Promotion foreign key(idPromotionFk) referecnces Promotion(idPromotion),
-	check(nbFigurine > 0),
-	check(prizeCommand > 0)
-);
-
-//Langue
-create table Language
-(
-	idLanguage int not null,
-	name varchar(50) not null,
-
-	constraint pk_Language primary key(idLanguage)
-);
-
-//Commande
+//Commande OK
 create table Command
 (
 	idCommand int not null,
@@ -77,28 +47,77 @@ create table Command
 	constraint pk_Command primary key(idCommand)
 );
 
+//Ligne commande OK
+create table CommandLine
+(
+	idCommandLine int not null,
+	nbFigurine int not null,
+	prizeCommand float not null,
+	idPromotionFK int not null,
+	command int not null,
+	figurine int not null,
+	
+	constraint pk_CommandLine primary key(idCommandLine),
+	constraint fk_Promotion foreign key(idPromotionFk) references Promotion(idPromotion),
+	constraint fk_Command foreign key(command ) references Command(idCommand),
+	constraint fk_Figurine foreign key(figurine ) references Figurine(idFigurine),
+	check(nbFigurine > 0),
+	check(prizeCommand > 0)
+);
+
+//Langue OK
+create table Language
+(
+	idLanguage int not null,
+	name varchar(50) not null,
+
+	constraint pk_Language primary key(idLanguage)
+);
+
 //Utilisateur
 create table User
 (
-	idUser int not null,
+	iduser varchar(50) not null,
 	lastName varchar(50) not null,
 	firstName varchar(50) not null,
-	mail varchar(50) not null,
+	email varchar(50) not null,
 	numTel varchar(50),
 	numFax varchar(50),
 	street varchar(50) not null,
 	city varchar(50) not null,
 	postalCode int not null,
 	country varchar(50) not null,
-	password varchar(50) not null,
+	passwordUser varchar(50) not null,
+	command int not null,
 
-	constraint pk_User primamry key(idUser)
+	constraint fk_CommandUser foreign key(command) references Command(idCommand),
+	constraint pk_User primary key(iduser)
 );
 
 //Figurine traduction
-create table FigurineTraduction
-();
+create table TranslationFigurine
+(
+	idTranslationFigurine int not null,
+	name varchar(50) not null,
+	description varchar(300) not null,
+	language int not null,
+	figurine int not null,
+	
+	
+	constraint fk_FigurineTranslation foreign key(figurine) references Figurine(idFigurine),
+	constraint fk_LanguageFigurine foreign key(language) references Language(idLanguage),
+	constraint pk_TranslationFigurine primary key(idTranslationFigurine )
+);
 
-//Catégorie traduction
-create table CategoryTraduction
-();
+//Catégorie traduction OK
+create table TranslationCategory
+(
+	idTranslationCateogry int not null,
+	name varchar(50) not null,
+	language int not null,
+	category int not null,
+
+	constraint fk_Category foreign key(category ) references Category(idCategory),
+	constraint fk_LanguageCategory foreign key(language ) references Language(idLanguage),
+	constraint pk_TranslationCategory primary key(idTranslationCateogry )
+);

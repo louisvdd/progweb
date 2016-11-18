@@ -7,7 +7,7 @@ import com.spring.henallux.dataAccess.entity.*;
 
 @Repository
 @Transactional
-public interface TranslationCategoryRepository extends JpaRepository<TranslationCategoryEntity, String>
+public interface TranslationCategoryRepository extends JpaRepository<TranslationCategoryEntity, String>//doit être un int
 {
 
 }

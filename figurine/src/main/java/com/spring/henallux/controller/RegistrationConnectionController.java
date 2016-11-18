@@ -33,6 +33,8 @@ public class RegistrationConnectionController
 		String userName = userConnection.getIdUser();
 		String userPassword = userConnection.getPassword();
 		
+		System.out.println(userName+" "+userPassword);
+		
 		if(userDAO.getUsers().contains(userName) && userDAO.getUsers().contains(userPassword))
 			return "redirect:/userConnection";
 		

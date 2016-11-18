@@ -2,8 +2,6 @@ package com.spring.henallux.dataAccess.entity;
 
 import javax.persistence.*;
 
-import com.spring.henallux.model.Command;
-
 @Entity
 @Table(name="user")
 public class UserEntity 

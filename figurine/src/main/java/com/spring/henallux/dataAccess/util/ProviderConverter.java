@@ -50,8 +50,11 @@ public class ProviderConverter
 	public TranslationFigurineEntity translationFigurineModeltoTranslationFigurineEntity(TranslationFigurine translationFigurine)
 	{
 		TranslationFigurineEntity translationFigurineEntity = new TranslationFigurineEntity();
+		translationFigurineEntity.setIdTranslationFigurine(translationFigurine.getIdTranslationFigurine());
 		translationFigurineEntity.setName(translationFigurine.getName());
 		translationFigurineEntity.setDescription(translationFigurine.getDescription());
+		translationFigurineEntity.setFigurine(translationFigurine.getFigurine());
+		translationFigurineEntity.setLanguage(translationFigurine.getLanguage());
 		
 		return translationFigurineEntity;
 	}
@@ -59,8 +62,11 @@ public class ProviderConverter
 	public TranslationFigurine translationFigurineEntitytoTranslationFigurineModel(TranslationFigurineEntity translationFigurineEntity)
 	{
 		TranslationFigurine translationFigurine = new TranslationFigurine();
+		translationFigurine.setIdTranslationFigurine(translationFigurineEntity.getIdTranslationFigurine());
 		translationFigurine.setName(translationFigurineEntity.getName());
 		translationFigurine.setDescription(translationFigurineEntity.getDescription());
+		translationFigurine.setFigurine(translationFigurineEntity.getFigurine());
+		translationFigurine.setLanguage(translationFigurineEntity.getLanguage());
 		
 		return translationFigurine;
 	}
@@ -69,7 +75,10 @@ public class ProviderConverter
 	public TranslationCategoryEntity translationCategoryModeltoTranslationCategoryEntity(TranslationCategory translationCategory)
 	{
 		TranslationCategoryEntity translationCategoryEntity = new TranslationCategoryEntity();
+		translationCategoryEntity.setIdTranslationCategory(translationCategory.getIdTranslationCategory());
 		translationCategoryEntity.setName(translationCategory.getName());
+		translationCategoryEntity.setLanguage(translationCategory.getLanguage());
+		translationCategoryEntity.setCategory(translationCategory.getCategory());
 		
 		return translationCategoryEntity;
 	}
@@ -161,9 +170,12 @@ public class ProviderConverter
 	public CommandLineEntity commandLineModeltoCommandLineEntity(CommandLine commandeLine)
 	{
 		CommandLineEntity commandLineEntity = new CommandLineEntity();
+		commandLineEntity.setIdCommandeLine(commandeLine.getIdCommandeLine());
 		commandLineEntity.setNbFigurine(commandeLine.getNbFigurine());
 		commandLineEntity.setPrizeCommand(commandeLine.getPrizeCommand());
 		commandLineEntity.setPromotion(commandeLine.getPromotion());
+		commandLineEntity.setFigurine(commandeLine.getFigurine());
+		commandLineEntity.setCommand(commandeLine.getCommand());
 		
 		return commandLineEntity;
 	}

@@ -2,44 +2,75 @@ package com.spring.henallux.model;
 
 public class CommandLine 
 {
+	private int idCommandeLine;
 	private int nbFigurine;
 	private double prizeCommand;
 	private int promotion;
+	private int figurine;
+	private int command;
 	
 	public CommandLine()
 	{
 		
 	}
-	
-	//GETTERS =====================================================
-	public int getNbFigurine()
+
+	public int getIdCommandeLine() 
+	{
+		return idCommandeLine;
+	}
+
+	public void setIdCommandeLine(int idCommandeLine) 
+	{
+		this.idCommandeLine = idCommandeLine;
+	}
+
+	public int getNbFigurine() 
 	{
 		return nbFigurine;
 	}
-	
-	public double getPrizeCommand()
+
+	public void setNbFigurine(int nbFigurine) 
+	{
+		this.nbFigurine = nbFigurine;
+	}
+
+	public double getPrizeCommand() 
 	{
 		return prizeCommand;
 	}
-	
-	public int getPromotion()
+
+	public void setPrizeCommand(double prizeCommand) 
+	{
+		this.prizeCommand = prizeCommand;
+	}
+
+	public int getPromotion() 
 	{
 		return promotion;
 	}
-	
-	//SETTERS =====================================================
-	public void setNbFigurine(int nb)
+
+	public void setPromotion(int promotion) 
 	{
-		nbFigurine = nb;
+		this.promotion = promotion;
 	}
-	
-	public void setPrizeCommand(double p)
+
+	public int getFigurine() 
 	{
-		prizeCommand = p;
+		return figurine;
 	}
-	
-	public void setPromotion(int pr)
+
+	public void setFigurine(int figurine) 
 	{
-		promotion = pr;
+		this.figurine = figurine;
+	}
+
+	public int getCommand() 
+	{
+		return command;
+	}
+
+	public void setCommand(int command) 
+	{
+		this.command = command;
 	}
 }
