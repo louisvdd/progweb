@@ -85,9 +85,9 @@ create table User
 	numFax varchar(50),
 	street varchar(50) not null,
 	city varchar(50) not null,
-	postalCode int not null,
+	postalCode varchar(50) not null,
 	country varchar(50) not null,
-	passwordUser varchar(50) not null,
+	password varchar(50) not null,
 	command int not null,
 
 	constraint fk_CommandUser foreign key(command) references Command(idCommand),
@@ -121,3 +121,6 @@ create table TranslationCategory
 	constraint fk_LanguageCategory foreign key(language ) references Language(idLanguage),
 	constraint pk_TranslationCategory primary key(idTranslationCateogry )
 );
+
+
+//pour insert une date : STR_TO_DATE('1-01-2012', '%d-%m-%Y')
