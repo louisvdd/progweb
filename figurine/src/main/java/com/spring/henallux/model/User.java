@@ -2,12 +2,8 @@ package com.spring.henallux.model;
 
 import java.util.Collection;
 
-import javax.persistence.Column;
-import javax.persistence.OneToMany;
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Pattern;
-import javax.validation.constraints.Size;
+import javax.persistence.*;
+import javax.validation.constraints.*;
 
 import com.spring.henallux.dataAccess.entity.CommandEntity;
 

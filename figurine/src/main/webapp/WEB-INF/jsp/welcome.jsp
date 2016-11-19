@@ -51,7 +51,7 @@
 		    <div class="container">		
 			
 				<p>
-					<spring:message code="long"/>
+					<spring:message code="welcomeSentence"/>
 				</p>
 			
 			</div>
