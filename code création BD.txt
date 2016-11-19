@@ -10,6 +10,17 @@ create table Promotion
 	check(startDate < enDate)	
 );
 
+//Catégorie OK
+create table Category
+(
+	idCategory int not null,
+	name varchar(50) not null,
+	dateOut date not null,
+	producer varchar(50) not null,
+
+	constraint pk_Category primary key(idCategory)
+);
+
 //Figurine OK
 create table Figurine
 (
@@ -22,20 +33,11 @@ create table Figurine
 	painting boolean not null,
 	nbStock int not null,
 	cost float not null,
+	category int not null,
 
 	constraint pk_Figurine primary key(idFigurine),
+	constraint fk_Category foreign key(category) references Category(idCategory),
 	check(cost > 0)
-);
-
-//Catégorie OK
-create table Category
-(
-	idCategory int not null,
-	name varchar(50) not null,
-	dateOut date not null,
-	producer varchar(50) not null,
-
-	constraint pk_Category primary key(idCategory)
 );
 
 //Utilisateur OK
@@ -124,3 +126,13 @@ create table TranslationCategory
 
 
 //pour insert une date : STR_TO_DATE('1-01-2012', '%d-%m-%Y')
+
+//Création categories
+insert into category
+values();
+
+insert into category
+values();
+
+insert into category
+values();
