@@ -10,20 +10,14 @@ import javax.validation.constraints.*;
 public class CommandEntity 
 {
 	@Id
-<<<<<<< HEAD
-=======
 	@Min(1)
 	@Max(1000)
 	@NotNull
->>>>>>> branch 'master' of https://github.com/louisvdd/progweb.git
 	@Column(name="idcommand")
 	private int idCommand;
 	
-<<<<<<< HEAD
-=======
 	@NotNull
 	@Past
->>>>>>> branch 'master' of https://github.com/louisvdd/progweb.git
 	@Column(name="datecommand")
 	private Date dateCommand;
 

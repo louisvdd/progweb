@@ -9,37 +9,25 @@ import javax.validation.constraints.*;
 public class PromotionEntity 
 {
 	@Id
-<<<<<<< HEAD
-=======
 	@NotNull
 	@Min(1)
 	@Max(1000)
->>>>>>> branch 'master' of https://github.com/louisvdd/progweb.git
 	@Column(name="idpromotion")
 	private int idPromotion;
 	
-<<<<<<< HEAD
-=======
 	@NotNull
 	@DecimalMin("0.00")
 	@DecimalMax("100.00")
->>>>>>> branch 'master' of https://github.com/louisvdd/progweb.git
 	@Column(name="amountpourc")
 	private double amountPourc;
 	
-<<<<<<< HEAD
-=======
 	@NotNull
 	@Past
->>>>>>> branch 'master' of https://github.com/louisvdd/progweb.git
 	@Column(name="datebegin")
 	private Date dateBegin;
 	
-<<<<<<< HEAD
-=======
 	@NotNull
 	@Future
->>>>>>> branch 'master' of https://github.com/louisvdd/progweb.git
 	@Column(name="dateend")
 	private Date dateEnd;
 

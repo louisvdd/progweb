@@ -8,14 +8,11 @@ import javax.validation.constraints.*;
 public class TranslationCategoryEntity 
 {
 	@Id
-<<<<<<< HEAD
 	@Column(name="idtranslationcategory")
 	private int idTranslationCategory;
 	
-=======
 	@NotNull
 	@Size(min=5, max=30)
->>>>>>> branch 'master' of https://github.com/louisvdd/progweb.git
 	@Column(name="name")
 	private String name;
 	

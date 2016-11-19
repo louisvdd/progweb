@@ -8,12 +8,9 @@ import javax.validation.constraints.*;
 public class FigurineEntity 
 {
 	@Id
-<<<<<<< HEAD
-=======
 	@NotNull
 	@Min(1)
 	@Max(1000)
->>>>>>> branch 'master' of https://github.com/louisvdd/progweb.git
 	@Column(name="idfigurine")
 	private int idFigurine;
 	
@@ -48,12 +45,9 @@ public class FigurineEntity
 	@Column(name="painting")
 	private boolean painting;
 	
-<<<<<<< HEAD
-=======
 	@NotNull
 	@Min(1)
 	@Max(1000)
->>>>>>> branch 'master' of https://github.com/louisvdd/progweb.git
 	@Column(name="nbstock")
 	private int nbStock;
 	

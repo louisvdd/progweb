@@ -3,10 +3,6 @@ package com.spring.henallux.dataAccess.entity;
 import javax.persistence.*;
 import javax.validation.constraints.*;
 
-<<<<<<< HEAD
-=======
-
->>>>>>> branch 'master' of https://github.com/louisvdd/progweb.git
 @Entity
 @Table(name="user")
 public class UserEntity 

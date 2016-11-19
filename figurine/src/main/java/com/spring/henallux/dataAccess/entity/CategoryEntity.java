@@ -10,12 +10,9 @@ import javax.validation.constraints.*;
 public class CategoryEntity 
 {
 	@Id
-<<<<<<< HEAD
-=======
 	@Min(0)
 	@Max(1000)
 	@NotNull
->>>>>>> branch 'master' of https://github.com/louisvdd/progweb.git
 	@Column(name="idcategory")
 	private int idCategory;
 	
@@ -25,11 +22,8 @@ public class CategoryEntity
 	private String name;	
 	
 	@Column(name="dateout")
-<<<<<<< HEAD
-=======
 	@NotNull
 	@Past
->>>>>>> branch 'master' of https://github.com/louisvdd/progweb.git
 	private Date dateOut;
 	
 	@Column(name="producer")

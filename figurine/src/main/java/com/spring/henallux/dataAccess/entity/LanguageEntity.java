@@ -8,12 +8,9 @@ import javax.validation.constraints.*;
 public class LanguageEntity 
 {
 	@Id
-<<<<<<< HEAD
-=======
 	@NotNull
 	@Min(1)
 	@Max(1000)
->>>>>>> branch 'master' of https://github.com/louisvdd/progweb.git
 	@Column(name="idlanguage")
 	private int idLanguage;
 	
