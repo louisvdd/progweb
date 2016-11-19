@@ -76,6 +76,11 @@
 			        </div>
 			        
 			        <div class="input-field col s6">
+			          <form:input path="city" type="text" class="validate"/>
+			          <form:label path="city" ><spring:message code="city"/></form:label>
+			        </div>
+			        
+			        <div class="input-field col s6">
 			          <form:input path="postalCode" type="text" class="validate"/>
 			          <form:label path="postalCode" ><spring:message code="postalCode"/></form:label>
 			        </div>

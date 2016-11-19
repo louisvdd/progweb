@@ -1,5 +1,7 @@
 package com.spring.henallux.dataAccess.entity;
 
+import java.util.*;
+
 import javax.persistence.*;
 import javax.validation.constraints.*;
 
@@ -63,9 +65,9 @@ public class UserEntity
 	@NotNull( message = "Veuillez saisir votre mot de passe" )
 	private String password;
 	
-	@Column(name="command")
-	@Min(0)
-	private int command;
+	@OneToMany(mappedBy="userEnt")
+	private Collection<CommandEntity> commands;
+	
 
 	public String getIdUser() 
 	{
@@ -175,16 +177,6 @@ public class UserEntity
 	public void setPassword(String password) 
 	{
 		this.password = password;
-	}
-
-	public int getCommand() 
-	{
-		return command;
-	}
-
-	public void setCommand(int command) 
-	{
-		this.command = command;
 	}
 }
 

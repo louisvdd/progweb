@@ -5,6 +5,7 @@ import java.util.Date;
 import javax.persistence.*;
 import javax.validation.constraints.*;
 
+
 @Entity
 @Table(name="command")
 public class CommandEntity 
@@ -20,6 +21,20 @@ public class CommandEntity
 	@Past
 	@Column(name="datecommand")
 	private Date dateCommand;
+	
+	@JoinColumn(name="user", referencedColumnName="iduser")
+	@ManyToOne
+	private UserEntity userEnt;
+
+
+
+	public UserEntity getUserEnt() {
+		return userEnt;
+	}
+
+	public void setUserEnt(UserEntity userEnt) {
+		this.userEnt = userEnt;
+	}
 
 	public int getIdCommand() 
 	{
@@ -36,7 +51,8 @@ public class CommandEntity
 		return dateCommand;
 	}
 
-	public void setDateCommand(Date dateCommand) {
+	public void setDateCommand(Date dateCommand) 
+	{
 		this.dateCommand = dateCommand;
 	}
 	

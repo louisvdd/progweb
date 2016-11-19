@@ -22,7 +22,6 @@ public class ProviderConverter
 		userEntity.setPostalCode(user.getPostalCode());
 		userEntity.setCountry(user.getCountry());
 		userEntity.setPassword(user.getPassword());
-		userEntity.setCommand(user.getCommand());
 		
 		return userEntity;
 	}
@@ -41,7 +40,6 @@ public class ProviderConverter
 		user.setPostalCode(userEntity.getPostalCode());
 		user.setCountry(userEntity.getCountry());
 		user.setPassword(userEntity.getPassword());
-		user.setCommand(userEntity.getCommand());
 		
 		return user;
 	}
@@ -202,6 +200,7 @@ public class ProviderConverter
 		CommandEntity commandEntity = new CommandEntity();
 		commandEntity.setIdCommand(command.getIdCommand());
 		commandEntity.setDateCommand(command.getDateCommand());
+		//commandEntity.setUserEnt(command.getUser());
 		
 		return commandEntity;
 	}
@@ -211,6 +210,7 @@ public class ProviderConverter
 		Command command = new Command();
 		command.setIdCommand(commandEntity.getIdCommand());
 		command.setDateCommand(commandEntity.getDateCommand());
+		//IL faut changer pour le setter
 		
 		return command;
 	}

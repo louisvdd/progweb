@@ -2,10 +2,10 @@ package com.spring.henallux.model;
 
 import java.util.Date;
 
-import javax.validation.constraints.Max;
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Past;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.validation.constraints.*;
+
 
 public class Command 
 {
@@ -18,6 +18,19 @@ public class Command
 	@Past
 	private Date dateCommand;
 	
+	@JoinColumn(name="user", referencedColumnName="iduser")
+	@ManyToOne
+	private User user;
+	
+
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
+	}
+
 	public int getIdCommand() 
 	{
 		return idCommand;

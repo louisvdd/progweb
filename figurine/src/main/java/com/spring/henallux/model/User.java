@@ -1,10 +1,15 @@
 package com.spring.henallux.model;
 
+import java.util.Collection;
+
 import javax.persistence.Column;
+import javax.persistence.OneToMany;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
+
+import com.spring.henallux.dataAccess.entity.CommandEntity;
 
 //import javax.validation.constraints.*;
 
@@ -52,8 +57,8 @@ public class User
 	@NotNull( message = "Veuillez saisir votre mot de passe" )
 	private String password;
 	
-	@Min(0)
-	private int command;
+	@OneToMany(mappedBy="user")
+	private Collection<CommandEntity> commands;
 	
 	public User()
 	{
@@ -117,21 +122,11 @@ public class User
 		return password;
 	}
 	
-	public int getCommand()
-	{
-		return command;
-	}
-	
 	//SETTERS ========================================================
 	
 	public void setIdUser(String idUser) 
 	{
 		this.idUser = idUser;
-	}
-
-	public void setCommand(int command) 
-	{
-		this.command = command;
 	}
 	
 	public void setFirstName(String f)
