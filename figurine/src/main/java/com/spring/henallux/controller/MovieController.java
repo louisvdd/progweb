@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.spring.henallux.model.*;
- 
+
 @Controller
 @RequestMapping(value="/movie")
 public class MovieController 
