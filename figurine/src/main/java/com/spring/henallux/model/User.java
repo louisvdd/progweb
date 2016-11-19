@@ -1,21 +1,58 @@
 package com.spring.henallux.model;
 
+import javax.persistence.Column;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Size;
+
 //import javax.validation.constraints.*;
 
 public class User 
 {
-	//@NotNull
+	@Size(min=5, max=30)
+	@NotNull( message = "Veuillez saisir un nom d'utilisateur" )
 	private String idUser;
+	
+	@Size(min=5, max=30)
+	@NotNull( message = "Veuillez saisir votre prénom" )
 	private String firstName;
+	
+	@Size(min=5, max=50)
+	@NotNull( message = "Veuillez saisir votre nom" )
 	private String lastName;
+	
+	@NotNull( message = "Veuillez saisir une adresse email" )
+	@Pattern( regexp = "([^.@]+)(\\.[^.@]+)*@([^.@]+\\.)+([^.@]+)", message = "Merci de saisir une adresse mail valide" )
 	private String email;
+	
+	@Size(min=5, max=30)
 	private String numTel;
+	
+	@Size(min=5, max=30)
 	private String numFax;
+	
+	@Size(min=5, max=30)
+	@NotNull( message = "Veuillez saisir votre rue" )
 	private String street;
+	
+	@Size(min=5, max=30)
+	@NotNull( message = "Veuillez saisir la ville où vous habitez" )
 	private String city;
+	
+	@Size(min=3, max=10)
+	@NotNull( message = "Veuillez saisir votre code postal" )
 	private String postalCode;
+	
+	@Size(min=5, max=30)
+	@NotNull( message = "Veuillez saisir votre pays" )
 	private String country;
+	
+	@Size(min=5, max=30)
+	@NotNull( message = "Veuillez saisir votre mot de passe" )
 	private String password;
+	
+	@Min(0)
 	private int command;
 	
 	public User()

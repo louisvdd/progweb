@@ -34,6 +34,7 @@ public class UserEntity
 	private String numTel;
 	
 	//String ou int pour les numéros?
+	@Size(min=5, max=30)
 	@Column(name="numfax")
 	private String numFax;
 	

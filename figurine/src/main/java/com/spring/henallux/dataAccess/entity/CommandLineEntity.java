@@ -9,14 +9,10 @@ import javax.validation.constraints.*;
 public class CommandLineEntity 
 {
 	@Id
-	@Column(name="idcommandline")
-	private int idCommandeLine;
-	
-	@NotNull
 	@Min(1)
 	@Max(1000)
-	@Column(name="idlinecommand")
-	private int idLineCommand;
+	@Column(name="idcommandline")
+	private int idCommandeLine;
 	
 	@NotNull
 	@Min(0)
@@ -48,13 +44,6 @@ public class CommandLineEntity
 	@Column(name="figurine")
 	private int figurine;
 
-	public int getIdLineCommand() {
-		return idLineCommand;
-	}
-
-	public void setIdLineCommand(int idLineCommand) {
-		this.idLineCommand = idLineCommand;
-	}
 
 	public int getIdCommandeLine() 
 	{

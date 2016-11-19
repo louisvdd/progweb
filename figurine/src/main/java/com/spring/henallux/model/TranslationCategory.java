@@ -1,10 +1,22 @@
 package com.spring.henallux.model;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
 public class TranslationCategory 
 {
 	private int idTranslationCategory;
+	
+	@NotNull
+	@Size(min=5, max=30)
 	private String name;
+	
+	@NotNull
+	@Size(min=5, max=30)
 	private int language;
+	
+	@NotNull
+	@Size(min=5, max=30)
 	private int category;
 	
 	public int getIdTranslationCategory() 

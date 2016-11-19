@@ -16,9 +16,13 @@ public class TranslationCategoryEntity
 	@Column(name="name")
 	private String name;
 	
+	@NotNull
+	@Size(min=5, max=30)
 	@Column(name="language")
 	private int language;
 	
+	@NotNull
+	@Size(min=5, max=30)
 	@Column(name="category")
 	private int category;
 

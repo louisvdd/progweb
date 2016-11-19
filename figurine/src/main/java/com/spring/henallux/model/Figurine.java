@@ -1,15 +1,52 @@
 package com.spring.henallux.model;
 
+import javax.validation.constraints.DecimalMax;
+import javax.validation.constraints.DecimalMin;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
 public class Figurine 
 {
+	@NotNull
+	@Min(1)
+	@Max(1000)
 	private int idFigurine;
+	
+	@NotNull
+	@Size(min=5, max=30)
 	private String name;
+	
+	@NotNull
+	@Size(min=10, max=300)
 	private String description;
+	
+	@NotNull
+	@DecimalMin("1.00")
+	@DecimalMax("10000.00")
 	private double weight;
+	
+	@NotNull
+	@DecimalMin("1.00")
+	@DecimalMax("100.00")
 	private double size;
+	
+	@NotNull
+	@Size(min=5, max=30)
 	private String brand; //marque
+	
+	@NotNull
 	private boolean painting;
+	
+	@NotNull
+	@Min(1)
+	@Max(1000)
 	private int nbStock;
+	
+	@NotNull
+	@DecimalMin("1.00")
+	@DecimalMax("10000.00")
 	private double cost;
 	
 	public Figurine()

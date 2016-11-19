@@ -21,9 +21,15 @@ public class TranslationFigurineEntity
 	@Column(name="description")
 	private String description;
 	
+	@NotNull
+	@Min(1)
+	@Max(1000)
 	@Column(name="figurine")
 	private int figurine;
 	
+	@NotNull
+	@Min(1)
+	@Max(1000)
 	@Column(name="language")
 	private int language;
 

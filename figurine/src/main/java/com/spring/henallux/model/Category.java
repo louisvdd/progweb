@@ -1,12 +1,25 @@
 package com.spring.henallux.model;
 
 import java.util.Date;
+import javax.validation.constraints.*;
 
 public class Category 
 {
+	@Min(0)
+	@Max(1000)
+	@NotNull
 	private int idCategory;
+	
+	@NotNull
+	@Size(min=5, max=30)
 	private String name;
+	
+	@NotNull
+	@Past
 	private Date dateOut;
+	
+	@NotNull
+	@Size(min=5, max=30)
 	private String producer;
 	
 	public int getIdCategory() 

@@ -1,11 +1,30 @@
 package com.spring.henallux.model;
 
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
 public class TranslationFigurine 
 {
 	private int idTranslationFigurine;
+	
+	@NotNull
+	@Size(min=5, max=30)
 	private String name;
+	
+	@NotNull
+	@Size(min=10, max=300)
 	private String description;
+	
+	@NotNull
+	@Min(1)
+	@Max(1000)
 	private int figurine;
+	
+	@NotNull
+	@Min(1)
+	@Max(1000)
 	private int language;
 	
 	public int getIdTranslationFigurine() 
