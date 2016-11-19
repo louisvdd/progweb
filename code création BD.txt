@@ -38,13 +38,33 @@ create table Category
 	constraint pk_Category primary key(idCategory)
 );
 
+//Utilisateur OK
+create table User
+(
+	iduser varchar(50) not null,
+	lastName varchar(50) not null,
+	firstName varchar(50) not null,
+	email varchar(50) not null,
+	numTel varchar(50),
+	numFax varchar(50),
+	street varchar(50) not null,
+	city varchar(50) not null,
+	postalCode varchar(50) not null,
+	country varchar(50) not null,
+	password varchar(50) not null,
+
+	constraint pk_User primary key(iduser)
+);
+
 //Commande OK
 create table Command
 (
 	idCommand int not null,
 	dateCommand date not null,
+	user varchar(50) not null,
 
-	constraint pk_Command primary key(idCommand)
+	constraint pk_Command primary key(idCommand),
+	constraint fk_User foreign key(user) references User(idUser)
 );
 
 //Ligne commande OK
@@ -60,7 +80,7 @@ create table CommandLine
 	constraint pk_CommandLine primary key(idCommandLine),
 	constraint fk_Promotion foreign key(idPromotionFk) references Promotion(idPromotion),
 	constraint fk_Command foreign key(command ) references Command(idCommand),
-	constraint fk_Figurine foreign key(figurine ) references Figurine(idFigurine),
+	constraint fk_Figurine foreign key(figurine ) references Figurine(idFigurine),	
 	check(nbFigurine > 0),
 	check(prizeCommand > 0)
 );
@@ -72,26 +92,6 @@ create table Language
 	name varchar(50) not null,
 
 	constraint pk_Language primary key(idLanguage)
-);
-
-//Utilisateur
-create table User
-(
-	iduser varchar(50) not null,
-	lastName varchar(50) not null,
-	firstName varchar(50) not null,
-	email varchar(50) not null,
-	numTel varchar(50),
-	numFax varchar(50),
-	street varchar(50) not null,
-	city varchar(50) not null,
-	postalCode varchar(50) not null,
-	country varchar(50) not null,
-	password varchar(50) not null,
-	command int not null,
-
-	constraint fk_CommandUser foreign key(command) references Command(idCommand),
-	constraint pk_User primary key(iduser)
 );
 
 //Figurine traduction
