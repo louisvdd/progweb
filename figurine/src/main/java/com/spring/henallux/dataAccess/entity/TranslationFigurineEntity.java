@@ -1,18 +1,26 @@
 package com.spring.henallux.dataAccess.entity;
 
 import javax.persistence.*;
+import javax.validation.constraints.*;
 
 @Entity
 @Table(name="translationfigurine")
 public class TranslationFigurineEntity 
 {
 	@Id
+<<<<<<< HEAD
 	@Column(name="idTranslationfigurine")
 	private int idTranslationFigurine;
 	
+=======
+	@NotNull
+	@Size(min=5, max=30)
+>>>>>>> branch 'master' of https://github.com/louisvdd/progweb.git
 	@Column(name="name")
 	private String name;
 	
+	@NotNull
+	@Size(min=10, max=300)
 	@Column(name="description")
 	private String description;
 	

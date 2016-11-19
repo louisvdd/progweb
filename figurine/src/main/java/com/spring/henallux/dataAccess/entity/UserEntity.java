@@ -1,46 +1,73 @@
 package com.spring.henallux.dataAccess.entity;
 
 import javax.persistence.*;
+import javax.validation.constraints.*;
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> branch 'master' of https://github.com/louisvdd/progweb.git
 @Entity
 @Table(name="user")
 public class UserEntity 
 {
 	@Id
 	@Column(name="iduser")
+	@Size(min=5, max=30)
+	@NotNull( message = "Veuillez saisir un nom d'utilisateur" )
 	private String idUser;
 	
 	@Column(name="firstname")
+	@Size(min=5, max=30)
+	@NotNull( message = "Veuillez saisir votre prénom" )
 	private String firstName;
 	
 	@Column(name="lastname")
+	@Size(min=5, max=50)
+	@NotNull( message = "Veuillez saisir votre nom" )
 	private String lastName;
 	
 	@Column(name="email")
+	@NotNull( message = "Veuillez saisir une adresse email" )
+	@Pattern( regexp = "([^.@]+)(\\.[^.@]+)*@([^.@]+\\.)+([^.@]+)", message = "Merci de saisir une adresse mail valide" )
 	private String email;
 	
+	//String ou int pour les numéros?
 	@Column(name="numtel")
+	@Size(min=5, max=30)
 	private String numTel;
 	
+	//String ou int pour les numéros?
 	@Column(name="numfax")
 	private String numFax;
 	
 	@Column(name="street")
+	@Size(min=5, max=30)
+	@NotNull( message = "Veuillez saisir votre rue" )
 	private String street;
 	
 	@Column(name="city")
+	@Size(min=5, max=30)
+	@NotNull( message = "Veuillez saisir la ville où vous habitez" )
 	private String city;
 	
 	@Column(name="postalcode")
+	@Size(min=3, max=10)
+	@NotNull( message = "Veuillez saisir votre code postal" )
 	private String postalCode;
 	
 	@Column(name="country")
+	@Size(min=5, max=30)
+	@NotNull( message = "Veuillez saisir votre pays" )
 	private String country;
 	
 	@Column(name="password")
+	@Size(min=5, max=30)
+	@NotNull( message = "Veuillez saisir votre mot de passe" )
 	private String password;
 	
 	@Column(name="command")
+	@Min(0)
 	private int command;
 
 	public String getIdUser() 
