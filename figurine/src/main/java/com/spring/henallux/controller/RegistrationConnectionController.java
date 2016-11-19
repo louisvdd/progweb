@@ -38,16 +38,13 @@ public class RegistrationConnectionController
 		ArrayList <User> users = userDAO.getUsers();
 		int i = 0;
 		
-		while(i < users.size() && users.get(i).getIdUser().equals(userName)==false)
+		while(i < users.size()-1 && users.get(i).getIdUser().equals(userName)==false)
 		{
 			i++;
 		}	
 		
-		//C'EST DEGUEULASSE!!!!! Il faut changer ça
-		if(i==users.size())
-			i--;
-		
 		if(users.get(i).getIdUser().equals(userName) && users.get(i).getPassword().equals(userPassword))
+		//if(userDAO.getUsers().contains(userName) && userDAO.getUsers().contains(userPassword))
 			return "redirect:/userConnection";
 		
 		return "redirect:/errorConnection";
