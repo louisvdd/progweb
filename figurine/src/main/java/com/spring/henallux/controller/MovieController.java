@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.spring.henallux.model.*;
+import com.spring.henallux.model.*; // test git
  
 @Controller
 @RequestMapping(value="/movie")
