@@ -173,10 +173,13 @@
 		        					<div class="card-image">
 		        						<img src="images/animé.jpg" alt="" height="200px">
 		        					</div>
+		        					<p><spring:message code="description"/> : <spring:message code="long"/></p>	
+		        					<p><spring:message code="size"/> : <spring:message code="long"/></p>	
+		        					<p><spring:message code="weight"/> : <spring:message code="long"/></p>	
+		        					<p><spring:message code="brand"/> : <spring:message code="long"/></p>	
 		        					<div>
 		        						<h5 class="center-align"><spring:message code="prize"/> : 50 <spring:message code="euro"/></h5>
 		        					</div>
-		        					<p><spring:message code="description"/>
 		        					<p class="range-field">
 								      <input type="range" id="test5" min="1" max="10" />
 								    </p>
@@ -197,6 +200,10 @@
 		        					<div class="card-image">
 		        						<img src="images/original.png" alt="" height="200px">
 		        					</div>
+		        					<p><spring:message code="description"/> : <spring:message code="long"/></p>	
+		        					<p><spring:message code="size"/> : <spring:message code="long"/></p>	
+		        					<p><spring:message code="weight"/> : <spring:message code="long"/></p>	
+		        					<p><spring:message code="brand"/> : <spring:message code="long"/></p>	
 		        					<div>
 		        						<h5 class="center-align"><spring:message code="prize"/> : 50 <spring:message code="euro"/></h5>
 		        					</div>
@@ -217,6 +224,10 @@
 		        					<div class="card-image">
 		        						<img src="images/jeuxvidéo.jpeg" alt="" height="200px">
 		        					</div>
+		        					<p><spring:message code="description"/> : <spring:message code="long"/></p>	
+		        					<p><spring:message code="size"/> : <spring:message code="long"/></p>	
+		        					<p><spring:message code="weight"/> : <spring:message code="long"/></p>	
+		        					<p><spring:message code="brand"/> : <spring:message code="long"/></p>	
 		        					<div>
 		        						<h5 class="center-align"><spring:message code="prize"/> : 50 <spring:message code="euro"/></h5>
 		        					</div>
