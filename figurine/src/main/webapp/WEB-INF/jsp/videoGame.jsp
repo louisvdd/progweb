@@ -28,6 +28,9 @@
 			<h2>
 				<spring:message code="findGame"/>
 			</h2>
+			<form:select path="figurine">
+				<form:options items="${figurineVideoGame}" itemValue="idFigurine" itemLabel="image"/>
+			</form:select>		
 			<div class="row">
 				<div class="col s3">
 					<form>

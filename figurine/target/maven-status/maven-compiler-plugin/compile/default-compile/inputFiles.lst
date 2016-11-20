@@ -4,7 +4,6 @@ C:\Users\Public\SiteDeVente\progweb\figurine\src\main\java\com\spring\henallux\d
 C:\Users\Public\SiteDeVente\progweb\figurine\src\main\java\com\spring\henallux\dataAccess\repository\TranslationCategoryRepository.java
 C:\Users\Public\SiteDeVente\progweb\figurine\src\main\java\com\spring\henallux\dataAccess\entity\CommandEntity.java
 C:\Users\Public\SiteDeVente\progweb\figurine\src\main\java\com\spring\henallux\dataAccess\repository\PromotionRepository.java
-C:\Users\Public\SiteDeVente\progweb\figurine\src\main\java\com\spring\henallux\service\FigurineService.java
 C:\Users\Public\SiteDeVente\progweb\figurine\src\main\java\com\spring\henallux\dataAccess\entity\CategoryEntity.java
 C:\Users\Public\SiteDeVente\progweb\figurine\src\main\java\com\spring\henallux\dataAccess\entity\UserEntity.java
 C:\Users\Public\SiteDeVente\progweb\figurine\src\main\java\com\spring\henallux\model\User.java
@@ -16,6 +15,7 @@ C:\Users\Public\SiteDeVente\progweb\figurine\src\main\java\com\spring\henallux\c
 C:\Users\Public\SiteDeVente\progweb\figurine\src\main\java\com\spring\henallux\dataAccess\dao\TranslationFigurineDAO.java
 C:\Users\Public\SiteDeVente\progweb\figurine\src\main\java\com\spring\henallux\dataAccess\dao\LanguageDAO.java
 C:\Users\Public\SiteDeVente\progweb\figurine\src\main\java\com\spring\henallux\model\Figurine.java
+C:\Users\Public\SiteDeVente\progweb\figurine\src\main\java\com\spring\henallux\service\CommandsService.java
 C:\Users\Public\SiteDeVente\progweb\figurine\src\main\java\com\spring\henallux\controller\RegistrationConnectionController.java
 C:\Users\Public\SiteDeVente\progweb\figurine\src\main\java\com\spring\henallux\config\MainConfig.java
 C:\Users\Public\SiteDeVente\progweb\figurine\src\main\java\com\spring\henallux\dataAccess\entity\FigurineEntity.java
@@ -30,6 +30,7 @@ C:\Users\Public\SiteDeVente\progweb\figurine\src\main\java\com\spring\henallux\d
 C:\Users\Public\SiteDeVente\progweb\figurine\src\main\java\com\spring\henallux\controller\UserConnectionController.java
 C:\Users\Public\SiteDeVente\progweb\figurine\src\main\java\com\spring\henallux\dataAccess\dao\PromotionDAO.java
 C:\Users\Public\SiteDeVente\progweb\figurine\src\main\java\com\spring\henallux\controller\BasketController.java
+C:\Users\Public\SiteDeVente\progweb\figurine\src\main\java\com\spring\henallux\service\FigurinesService.java
 C:\Users\Public\SiteDeVente\progweb\figurine\src\main\java\com\spring\henallux\controller\MovieController.java
 C:\Users\Public\SiteDeVente\progweb\figurine\src\main\java\com\spring\henallux\dataAccess\entity\CommandLineEntity.java
 C:\Users\Public\SiteDeVente\progweb\figurine\src\main\java\com\spring\henallux\controller\ErrorConnectionController.java

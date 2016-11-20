@@ -1,20 +1,24 @@
 package com.spring.henallux.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
 
 import com.spring.henallux.model.Figurine;
+import com.spring.henallux.service.FigurinesService;
 
 @Controller
 @RequestMapping(value="/japaneseAnimation")
 public class JapaneseAnimationController 
 {
+	@Autowired
+	private FigurinesService figurinesService;
+	
 	@RequestMapping(method=RequestMethod.GET)
 	public String home(Model model)
 	{
+		model.addAttribute("figurineAnimation", figurinesService.getFigurinesJapaneseAnimation());
 		model.addAttribute("addBasket", new Figurine());
 		model.addAttribute("searchName", new Figurine());
 		model.addAttribute("searchPrize", new Figurine());

@@ -14,6 +14,7 @@ com\spring\henallux\model\Category.class
 com\spring\henallux\dataAccess\entity\UserEntity.class
 com\spring\henallux\dataAccess\repository\LanguageRepository.class
 com\spring\henallux\dataAccess\repository\CommandRepository.class
+com\spring\henallux\service\FigurinesService.class
 com\spring\henallux\dataAccess\dao\TranslationFigurineDAO.class
 com\spring\henallux\dataAccess\repository\CommandLineRepository.class
 com\spring\henallux\model\TranslationFigurine.class
@@ -31,11 +32,11 @@ com\spring\henallux\config\TilesConfig.class
 com\spring\henallux\dataAccess\dao\PromotionDAO.class
 com\spring\henallux\dataAccess\dao\CommandLineDAO.class
 com\spring\henallux\dataAccess\repository\TranslationCategoryRepository.class
+com\spring\henallux\service\CommandsService.class
 com\spring\henallux\service\RegistrationService.class
 com\spring\henallux\controller\UserCommandController.class
 com\spring\henallux\dataAccess\repository\CategoryRepository.class
 com\spring\henallux\controller\JapaneseAnimationController.class
-com\spring\henallux\service\FigurineService.class
 com\spring\henallux\controller\MovieController.class
 com\spring\henallux\dataAccess\dao\UserDAO.class
 com\spring\henallux\controller\VideoGameController.class

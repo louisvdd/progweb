@@ -40,15 +40,36 @@ public class Figurine
 	private boolean painting;
 	
 	@NotNull
-	@Min(1)
-	@Max(1000)
-	private int nbStock;
-	
-	@NotNull
 	@DecimalMin("1.00")
 	@DecimalMax("10000.00")
 	private double cost;
 	
+	@NotNull
+	private String image;
+	
+	@NotNull
+	private int category;
+	
+	public String getImage() 
+	{
+		return image;
+	}
+
+	public void setImage(String image) 
+	{
+		this.image = image;
+	}
+	
+	public int getCategory() 
+	{
+		return category;
+	}
+
+	public void setCategory(int category) 
+	{
+		this.category = category;
+	}
+
 	public Figurine()
 	{
 		
@@ -88,11 +109,6 @@ public class Figurine
 	public boolean getPainting()
 	{
 		return painting;
-	}
-	
-	public int getNbStock()
-	{
-		return nbStock;
 	}
 	
 	public double getCost()
@@ -136,11 +152,6 @@ public class Figurine
 	public void setPainting(boolean p)
 	{
 		painting = p;
-	}
-	
-	public void setNbStock(int nb)
-	{
-		nbStock = nb;
 	}
 	
 	public void setCost(double c)

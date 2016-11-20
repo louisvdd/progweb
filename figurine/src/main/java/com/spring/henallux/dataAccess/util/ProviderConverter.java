@@ -145,8 +145,9 @@ public class ProviderConverter
 		figurineEntity.setSize(figurine.getSize());
 		figurineEntity.setBrand(figurine.getBrand());
 		figurineEntity.setPainting(figurine.getPainting());
-		figurineEntity.setNbStock(figurine.getNbStock());
 		figurineEntity.setCost(figurine.getCost());
+		figurineEntity.setImage(figurine.getImage());
+		figurineEntity.setCategory(figurine.getCategory());
 		
 		return figurineEntity;
 	}
@@ -161,8 +162,9 @@ public class ProviderConverter
 		figurine.setSize(figurineEntity.getSize());
 		figurine.setBrand(figurineEntity.getBrand());
 		figurine.setPainting(figurineEntity.isPainting());
-		figurine.setNbStock(figurineEntity.getNbStock());
 		figurine.setCost(figurineEntity.getCost());
+		figurine.setImage(figurineEntity.getImage());
+		figurine.setCategory(figurineEntity.getCategory());
 		
 		return figurine;
 	}

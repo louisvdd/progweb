@@ -7,7 +7,7 @@ import com.spring.henallux.dataAccess.entity.*;
 
 @Repository
 @Transactional
-public interface LanguageRepository extends JpaRepository<LanguageEntity, String> //doit être un int
+public interface LanguageRepository extends JpaRepository<LanguageEntity, Integer> //doit être un int
 {
 
 }

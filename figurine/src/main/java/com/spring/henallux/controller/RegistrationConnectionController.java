@@ -37,7 +37,7 @@ public class RegistrationConnectionController
 	}
 	//Bouton pour la CONNEXION=====================================
 	@RequestMapping(value="/connection", method=RequestMethod.POST)
-	public String getFormConnectionData(Model model,@Valid @ModelAttribute(value="connection") User userConnection, final BindingResult errors)
+	public String getFormConnectionData(Model model,@Valid @ModelAttribute(value=CURRENTUSER) User userConnection, final BindingResult errors)
 	{
 		String userName = userConnection.getIdUser();
 		String userPassword = userConnection.getPassword();

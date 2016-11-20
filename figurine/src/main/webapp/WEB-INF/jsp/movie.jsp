@@ -28,6 +28,10 @@
 			<h2>
 				<spring:message code="findMovie"/>
 			</h2>
+			<form:select path="figurine">
+				<form:options items="${figurineMovie}" itemValue="idFigurine" itemLabel="image"/>
+			</form:select>
+			
 			<div class="row">
 				<div class="col s3">
 					<form:form	id="searchNameID"

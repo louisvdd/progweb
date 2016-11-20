@@ -46,16 +46,16 @@ public class FigurineEntity
 	private boolean painting;
 	
 	@NotNull
-	@Min(1)
-	@Max(1000)
-	@Column(name="nbstock")
-	private int nbStock;
-	
-	@NotNull
 	@DecimalMin("1.00")
 	@DecimalMax("10000.00")
 	@Column(name="cost")
 	private double cost;
+	
+	@NotNull
+	private String image;
+	
+	@NotNull
+	private int category;
 
 	public int getIdFigurine() 
 	{
@@ -127,14 +127,24 @@ public class FigurineEntity
 		this.painting = painting;
 	}
 
-	public int getNbStock() 
+	public String getImage() 
 	{
-		return nbStock;
+		return image;
 	}
 
-	public void setNbStock(int nbStock) 
+	public void setImage(String image) 
 	{
-		this.nbStock = nbStock;
+		this.image = image;
+	}
+
+	public int getCategory() 
+	{
+		return category;
+	}
+
+	public void setCategory(int category) 
+	{
+		this.category = category;
 	}
 
 	public double getCost() 

@@ -7,7 +7,7 @@ import com.spring.henallux.dataAccess.entity.*;
 
 @Repository
 @Transactional
-public interface CommandRepository extends JpaRepository<CommandEntity, String> //doit être un int
+public interface CommandRepository extends JpaRepository<CommandEntity, Integer> //doit être un int
 {
 
 }

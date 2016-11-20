@@ -1,5 +1,6 @@
 package com.spring.henallux.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 //import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -8,14 +9,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.spring.henallux.model.*; // test git
+import com.spring.henallux.service.FigurinesService;
  
 @Controller
 @RequestMapping(value="/movie")
 public class MovieController 
 {
+	@Autowired
+	private FigurinesService figurinesService;
+	
 	@RequestMapping(method=RequestMethod.GET)
 	public String home(Model model)
 	{
+		model.addAttribute("figurineMovie", figurinesService.getFigurinesMovie());
 		model.addAttribute("addBasket", new Figurine());
 		model.addAttribute("searchName", new Figurine());
 		model.addAttribute("searchPrize", new Figurine());
