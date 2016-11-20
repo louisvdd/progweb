@@ -1,5 +1,7 @@
 package com.spring.henallux.model;
 
+import java.util.ArrayList;
+
 import javax.validation.constraints.DecimalMax;
 import javax.validation.constraints.DecimalMin;
 import javax.validation.constraints.Max;
@@ -49,7 +51,7 @@ public class Figurine
 	
 	@NotNull
 	private int category;
-	
+
 	public String getImage() 
 	{
 		return image;
