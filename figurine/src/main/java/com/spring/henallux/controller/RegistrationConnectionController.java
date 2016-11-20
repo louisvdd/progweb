@@ -2,25 +2,32 @@ package com.spring.henallux.controller;
 
 import java.util.ArrayList;
 
-//import java.util.ArrayList;
+import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.*;
 
 import com.spring.henallux.dataAccess.dao.UserDAO;
 import com.spring.henallux.model.*;
 
 @Controller
 @RequestMapping(value="/registrationConnection")
+@SessionAttributes(RegistrationConnectionController.CURRENTUSER)
 public class RegistrationConnectionController 
 {
 	@Autowired
 	private UserDAO userDAO;
 	
+	protected static final String CURRENTUSER = "currentUser";
+	
+	@ModelAttribute(CURRENTUSER)
+	public User user()
+	{
+		return new User();
+	}
 	@RequestMapping(method=RequestMethod.GET)
 	public String home(Model model)
 	{
@@ -30,7 +37,7 @@ public class RegistrationConnectionController
 	}
 	//Bouton pour la CONNEXION=====================================
 	@RequestMapping(value="/connection", method=RequestMethod.POST)
-	public String getFormConnectionData(Model model, @ModelAttribute(value="connection") User userConnection)
+	public String getFormConnectionData(Model model,@Valid @ModelAttribute(value="connection") User userConnection, final BindingResult errors)
 	{
 		String userName = userConnection.getIdUser();
 		String userPassword = userConnection.getPassword();
