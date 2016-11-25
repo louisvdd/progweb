@@ -44,7 +44,7 @@
 						<form:button class="waves-effect waves-light btn">
 					      	<spring:message code="searchButton"/>
 					    </form:button>
-					    <form:select path="category">
+					    <form:select path="name">
 							<form:options items="${figurineMovie}" itemValue="idFigurine" itemLabel="image"/>
 						</form:select>				   					    
 					</form:form>

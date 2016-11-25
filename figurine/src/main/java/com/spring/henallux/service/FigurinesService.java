@@ -34,8 +34,9 @@ public class FigurinesService
 			{
 				figurinesMovie.add(figurines.get(i));
 			}
+			
 		}
-				
+
 		return figurinesMovie;
 	}
 	
