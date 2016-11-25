@@ -59,9 +59,9 @@ public class RegistrationConnectionController
 	
 	//Bouton pour l'INSCRIPTION====================================
 	@RequestMapping(value="/registration", method=RequestMethod.POST)
-	public String getFormRegistrationData(Model model, @ModelAttribute(value="registration") User userConnection)
+	public String getFormRegistrationData(Model model, @ModelAttribute(value="registration") User userRegistration)
 	{
-		userDAO.save(userConnection);
+		userDAO.save(userRegistration);
 		return "redirect:/userRegistration";
 	}
 }

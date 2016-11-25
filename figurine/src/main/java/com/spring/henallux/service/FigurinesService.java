@@ -29,12 +29,11 @@ public class FigurinesService
 		ArrayList <Figurine> figurines = figurineDAO.getAllFigurines();
 		
 		for(int i=0;i<figurines.size();i++)
-		{			
+		{		
 			if(figurines.get(i).getCategory()==1)
 			{
 				figurinesMovie.add(figurines.get(i));
-			}
-			
+			}	
 		}
 
 		return figurinesMovie;
@@ -46,7 +45,7 @@ public class FigurinesService
 		ArrayList <Figurine> figurines = figurineDAO.getAllFigurines();
 		
 		for(int i=0;i<figurines.size();i++)
-		{			
+		{					
 			if(figurines.get(i).getCategory()==2)
 			{
 				figurinesJapaneseAnimation.add(figurines.get(i));
@@ -62,7 +61,7 @@ public class FigurinesService
 		ArrayList <Figurine> figurines = figurineDAO.getAllFigurines();
 		
 		for(int i=0;i<figurines.size();i++)
-		{			
+		{		
 			if(figurines.get(i).getCategory()==3)
 			{
 				figurinesVideoGame.add(figurines.get(i));

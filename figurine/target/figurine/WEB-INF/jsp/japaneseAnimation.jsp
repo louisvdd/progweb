@@ -28,21 +28,22 @@
 			<h2>
 				<spring:message code="findAnimation"/>
 			</h2>
-			<form:select path="figurine">
-				<form:options items="${figurineAnimation}" itemValue="idFigurine" itemLabel="image"/>
-			</form:select>
+			
 			<div class="row">
 				<div class="col s3">
-					<form>
+					<form:form	id="searchNameID"
+		      					method="POST"
+		      					action="/figurine/movie/searchName"
+		      					modelAttribute="searchName">
 						<div class="input-field">
 							<input id="search" type="search" required>
 							<label for="search"><i class="material-icons">search</i></label>
 							<i class="material-icons">close</i>
 						</div>
-						<button class="waves-effect waves-light btn">
+						<form:button class="waves-effect waves-light btn">
 					      	<spring:message code="searchButton"/>
-					    </button>	
-					</form>
+					    </form:button>	
+					</form:form>
 				</div>
 			</div>
 			<div class="row">
@@ -160,82 +161,42 @@
 	        	</div>
 	        	
 	        	<div class="col s9">
-	        		<div class="row">
-	        			<div class="col s4">
-	        				<div class="card">
-	        					<form:form>
-		        					<div>
-		        						<h4 class="center-align">
-		        							<spring:message code="figurineAnimation"/>
-		        						</h4>
-		        					</div>
-		        					<div class="card-image">
-		        						<img src="images/animé.jpg" alt="" height="200px">
-		        					</div>
-		        					<p><spring:message code="description"/> : <spring:message code="long"/></p>	
-		        					<p><spring:message code="size"/> : <spring:message code="long"/></p>	
-		        					<p><spring:message code="weight"/> : <spring:message code="long"/></p>	
-		        					<p><spring:message code="brand"/> : <spring:message code="long"/></p>	
-		        					<div>
-		        						<h5 class="center-align"><spring:message code="prize"/> : 50 <spring:message code="euro"/></h5>
-		        					</div>
-		        					<p class="range-field">
-								      <input type="range" id="test5" min="1" max="10" />
-								    </p>
-		        					<button class="btn waves-effect waves-light">
-		        						<spring:message code="addBasketButton"/>
-		        					</button>
-	        					</form:form>
-	        				</div>
-	        			</div>
-	        			<div class="col s4">
-	        				<div class="card">	 
-	        					<form:form>       					
-		        					<div>
-		        						<h4 class="center-align">
-		        							<spring:message code="figurineAnimation"/>
-		        						</h4>
-		        					</div>
-		        					<div class="card-image">
-		        						<img src="images/original.png" alt="" height="200px">
-		        					</div>
-		        					<p><spring:message code="description"/> : <spring:message code="long"/></p>	
-		        					<p><spring:message code="size"/> : <spring:message code="long"/></p>	
-		        					<p><spring:message code="weight"/> : <spring:message code="long"/></p>	
-		        					<p><spring:message code="brand"/> : <spring:message code="long"/></p>	
-		        					<div>
-		        						<h5 class="center-align"><spring:message code="prize"/> : 50 <spring:message code="euro"/></h5>
-		        					</div>
-		        					<button class="btn waves-effect waves-light">
-		        						<spring:message code="addBasketButton"/>
-		        					</button>
-	        					</form:form>
-	        				</div>
-	        			</div>
-	        			<div class="col s4">
-	        				<div class="card">
-	        					<form:form>
-		        					<div>
-		        						<h4 class="center-align">
-		        							<spring:message code="figurineAnimation"/>
-		        						</h4>
-		        					</div>
-		        					<div class="card-image">
-		        						<img src="images/jeuxvidéo.jpeg" alt="" height="200px">
-		        					</div>
-		        					<p><spring:message code="description"/> : <spring:message code="long"/></p>	
-		        					<p><spring:message code="size"/> : <spring:message code="long"/></p>	
-		        					<p><spring:message code="weight"/> : <spring:message code="long"/></p>	
-		        					<p><spring:message code="brand"/> : <spring:message code="long"/></p>	
-		        					<div>
-		        						<h5 class="center-align"><spring:message code="prize"/> : 50 <spring:message code="euro"/></h5>
-		        					</div>
-		        					<button class="btn waves-effect waves-light">
-		        						<spring:message code="addBasketButton"/>
-		        					</button>
-	        					</form:form>
-	        				</div>
-	        			</div>
+	        		<div class="row">        		
+	        			<c:forEach items="${figurineAnimation}" var="figurine">
+		        			<div class="col s4">
+		        				<div class="card">	
+		        					<form:form	id="addBasketID"
+								      			method="POST"
+								      			action="/figurine/movie/addBasket"
+								      			modelAttribute="addBasket">  
+								      	
+											<div>
+				        						<h4 class="center-align">
+				        							${figurine.name}
+				        						</h4>
+				        					</div>
+				        					<div class="card-image">
+				        						<img src="images/movieFigurine/${figurine.image}" alt="" height="200px">
+				        					</div>
+				        					
+				        					<p><spring:message code="description"/> : ${figurine.description}</p>	
+				        					<p><spring:message code="size"/> : ${figurine.size} cm</p>	
+				        					<p><spring:message code="weight"/> : ${figurine.weight} g</p>	
+				        					<p><spring:message code="brand"/> : ${figurine.brand}</p>	
+				        					<div>
+				        						<h5 class="center-align"><spring:message code="prize"/> : ${figurine.cost} <spring:message code="euro"/></h5>
+				        					</div>
+				        					<p class="range-field">
+										  		<input type="range" id="test5" min="1" max="10" />
+											</p>        					
+				        					<form:button class="btn waves-effect waves-light">
+				        						<spring:message code="addBasketButton"/>
+				        					</form:button>
+										    					
+		        					</form:form> 
+		        				</div>
+		        			</div>
+	        			</c:forEach> 
 	        		</div>
 	        	</div>
         	</div>

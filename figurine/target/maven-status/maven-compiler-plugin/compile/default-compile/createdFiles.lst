@@ -24,6 +24,7 @@ com\spring\henallux\dataAccess\repository\FigurineRepository.class
 com\spring\henallux\controller\BasketController.class
 com\spring\henallux\dataAccess\entity\PromotionEntity.class
 com\spring\henallux\model\CommandLine.class
+com\spring\henallux\model\UserConnection.class
 com\spring\henallux\controller\WelcomeController.class
 com\spring\henallux\model\Command.class
 com\spring\henallux\model\TranslationCategory.class
