@@ -45,7 +45,7 @@
 					      	<spring:message code="searchButton"/>
 					    </form:button>
 					    <form:select path="category">
-							<form:options items="${figurineMovie.getImage()}" itemValue="idFigurine" itemLabel="image"/>
+							<form:options items="${figurineMovie}" itemValue="idFigurine" itemLabel="image"/>
 						</form:select>				   					    
 					</form:form>
 				</div>

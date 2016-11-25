@@ -33,7 +33,7 @@ public class FigurinesService
 			if(figurines.get(i).getCategory()==1)
 			{
 				figurinesMovie.add(figurines.get(i));
-			}						
+			}
 		}
 				
 		return figurinesMovie;
