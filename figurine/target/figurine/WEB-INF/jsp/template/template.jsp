@@ -52,7 +52,7 @@
 				<div class="nav-wrapper container">
 				 	<a href="#" class="brand-logo black-text">
 				 		<img src ='<spring:url value="/images/logo.png"/>' height="40px" width="33px"/>
-				 		
+				 		Madoline
 					</a>
 				 	<a class="button-collapse" href="#" data-activates="nav-mobile">
 				 		<i class="material-icons black-text">menu</i>

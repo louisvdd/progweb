@@ -16,6 +16,19 @@
 			<div class="row">
 				<div class="col s9">
 			  	<ul class="collection">
+			  		<c:forEach items="${commandLines}" var="commandLine">
+			  			<li class="collection-item avatar">
+					    	<img src="images/figurine1.png" alt="" height="50px">
+						     <span class="title"><a href="#!">${commandLine.figurine}</a></span>
+						     <p><spring:message code="brand"/> : Marque1 <br>
+						      	<spring:message code="description"/> : <div class="truncate"><spring:message code="long"/></div>
+						     </p>
+						     <p class="secondary-content">
+						     	<spring:message code="prize"/> : ${commandLine.prizeCommand} <spring:message code="euro"/><br>
+						     	<spring:message code="nbFigurine"/> ${commandLine.nbFigurine}
+						     </p>			     
+				    	</li>
+			  		</c:forEach>
 				    <li class="collection-item avatar">
 				      <img src="images/figurine1.png" alt="" height="50px">
 				      <span class="title"><a href="#!">Figurine 1</a></span>
@@ -23,6 +36,7 @@
 				         <spring:message code="description"/> : <div class="truncate"><spring:message code="long"/></div>
 				      </p>
 				      <p class="secondary-content"><spring:message code="prize"/> : 50 <spring:message code="euro"/></p>
+				      
 				    </li>
 				    <li class="collection-item avatar">
 				      <img src="images/figurine2.png" alt="" height="50px">
@@ -50,36 +64,19 @@
 		  					<spring:message code="command"/>
 						</h5>
 		  				<ul>
-		  					<div class="row">
-		  						<li>
-		  							<div class="col s7">
-		  								figurine 1
-		  							</div>
-		  							<div class="col s5">
-		  								50 <spring:message code="euro"/>
-		  							</div>
-		  						</li>
-		  					</div>
-		  					<div class="row">
-		  						<li>
-		  							<div class="col s7">
-		  								figurine 2
-		  							</div>
-		  							<div class="col s5">
-		  								50 <spring:message code="euro"/>
-		  							</div>
-		  						</li>
-		  					</div>
-		  					<div class="row">
-		  						<li>
-		  							<div class="col s7">
-		  								figurine 3
-		  							</div>
-		  							<div class="col s5">
-		  								50 <spring:message code="euro"/>
-		  							</div>
-		  						</li>
-		  					</div>
+		  					<c:forEach items="${commandLines}" var="commandLine">
+			  					<div class="row">
+			  						<li>
+			  							<div class="col s7">
+			  								${commandLine.figurine} (${commandLine.nbFigurine}*)
+			  							</div>
+			  							<div class="col s5">
+			  								${commandLine.prizeCommand} <spring:message code="euro"/>
+			  							</div>
+			  						</li>
+			  					</div>
+			  				</c:forEach>
+		  					
 		  					<hr>
 		  					<div class="row">
 		  						<li>

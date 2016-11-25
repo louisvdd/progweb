@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.spring.henallux.model.User;
-import com.spring.henallux.service.CommandLinesService;
+import com.spring.henallux.service.*;
 
 
 @Controller
@@ -18,9 +18,13 @@ public class BasketController
 	@Autowired
 	private CommandLinesService commandLinesService;
 	
+	@Autowired
+	private CommandsService commandsService;
+	
 	@RequestMapping(method=RequestMethod.GET)
 	public String home(Model model)
 	{
+		model.addAttribute("command",commandsService.getCommand());
 		model.addAttribute("commandLines",commandLinesService.getCommandLines());
 		model.addAttribute("command", new User());
 		return "integrated:basket";

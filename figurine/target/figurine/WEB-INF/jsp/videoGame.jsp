@@ -35,9 +35,6 @@
 		      					method="POST"
 		      					action="/figurine/movie/searchName"
 		      					modelAttribute="searchName">
-		      			<c:forEach items="${figurineVideoGame}" var="figurine">
-							${figurine.name} ${figurine.image}<br>
-						</c:forEach>
 						<div class="input-field">
 							<input id="search" type="search" required>
 							<label for="search"><i class="material-icons">search</i></label>
@@ -179,7 +176,7 @@
 				        						</h4>
 				        					</div>
 				        					<div class="card-image">
-				        						<img src="images/movieFigurine/${figurine.image}" alt="" height="200px">
+				        						<img src="images/videoGameFigurine/${figurine.image}" alt="" height="200px">
 				        					</div>
 				        					
 				        					<p><spring:message code="description"/> : ${figurine.description}</p>	
@@ -199,6 +196,7 @@
 		        					</form:form> 
 		        				</div>
 		        			</div>
+		        			<br>
 	        			</c:forEach> 
 	        		</div>
 	        	</div>

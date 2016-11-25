@@ -25,13 +25,7 @@ public class CommandLineEntity
 	@DecimalMax("10000.00")
 	@Column(name="prizecommand")
 	private double prizeCommand;
-	
-	@NotNull
-	@Min(0)
-	@Max(1000)
-	@Column(name="promotion")
-	private int promotion;
-	
+		
 	@NotNull
 	@Min(0)
 	@Max(1000)
@@ -95,16 +89,5 @@ public class CommandLineEntity
 		this.prizeCommand = prizeCommand;
 	}
 
-	public int getPromotion() 
-	{
-		return promotion;
-	}
-
-	public void setPromotion(int promotion) 
-	{
-		this.promotion = promotion;
-	}
-	
-	
 }
 

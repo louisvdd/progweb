@@ -12,6 +12,7 @@ D:\Documents\SiteProjet\progweb\figurine\src\main\java\com\spring\henallux\dataA
 D:\Documents\SiteProjet\progweb\figurine\src\main\java\com\spring\henallux\controller\JapaneseAnimationController.java
 D:\Documents\SiteProjet\progweb\figurine\src\main\java\com\spring\henallux\controller\WelcomeController.java
 D:\Documents\SiteProjet\progweb\figurine\src\main\java\com\spring\henallux\dataAccess\repository\PromotionRepository.java
+D:\Documents\SiteProjet\progweb\figurine\src\main\java\com\spring\henallux\service\CommandLinesService.java
 D:\Documents\SiteProjet\progweb\figurine\src\main\java\com\spring\henallux\controller\ErrorConnectionController.java
 D:\Documents\SiteProjet\progweb\figurine\src\main\java\com\spring\henallux\dataAccess\dao\TranslationCategoryDAO.java
 D:\Documents\SiteProjet\progweb\figurine\src\main\java\com\spring\henallux\controller\UserCommandController.java
@@ -34,7 +35,6 @@ D:\Documents\SiteProjet\progweb\figurine\src\main\java\com\spring\henallux\model
 D:\Documents\SiteProjet\progweb\figurine\src\main\java\com\spring\henallux\model\Figurine.java
 D:\Documents\SiteProjet\progweb\figurine\src\main\java\com\spring\henallux\dataAccess\entity\CommandLineEntity.java
 D:\Documents\SiteProjet\progweb\figurine\src\main\java\com\spring\henallux\config\MainConfig.java
-D:\Documents\SiteProjet\progweb\figurine\src\main\java\com\spring\henallux\service\CommandsService.java
 D:\Documents\SiteProjet\progweb\figurine\src\main\java\com\spring\henallux\dataAccess\entity\LanguageEntity.java
 D:\Documents\SiteProjet\progweb\figurine\src\main\java\com\spring\henallux\model\CommandLine.java
 D:\Documents\SiteProjet\progweb\figurine\src\main\java\com\spring\henallux\dataAccess\repository\CommandLineRepository.java

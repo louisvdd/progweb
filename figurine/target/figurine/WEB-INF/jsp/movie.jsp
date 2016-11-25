@@ -195,7 +195,7 @@
 				        						</h4>
 				        					</div>
 				        					<div class="card-image">
-				        						<img src="images/movieFigurine/${figurine.image}" alt="" height="200px">
+				        						<img src="images/movieFigurine/${figurine.image}" alt="" height="400px">
 				        					</div>
 				        					
 				        					<p><spring:message code="description"/> : ${figurine.description}</p>	
@@ -215,6 +215,7 @@
 		        					</form:form> 
 		        				</div>
 		        			</div>
+		        			<br>
 	        			</c:forEach> 
 	        		</div>
 	        	</div>
