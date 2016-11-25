@@ -1,5 +1,6 @@
 package com.spring.henallux.controller;
 
+import org.springframework.beans.factory.annotation.*;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -7,15 +8,20 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.spring.henallux.model.User;
+import com.spring.henallux.service.CommandLinesService;
 
 
 @Controller
 @RequestMapping(value="/basket")
 public class BasketController 
 {
+	@Autowired
+	private CommandLinesService commandLinesService;
+	
 	@RequestMapping(method=RequestMethod.GET)
 	public String home(Model model)
 	{
+		model.addAttribute("commandLines",commandLinesService.getCommandLines());
 		model.addAttribute("command", new User());
 		return "integrated:basket";
 	}
