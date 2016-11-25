@@ -148,6 +148,7 @@ public class ProviderConverter
 		figurineEntity.setCost(figurine.getCost());
 		figurineEntity.setImage(figurine.getImage());
 		figurineEntity.setCategory(figurine.getCategory());
+		figurineEntity.setPromotion(figurine.getPromotion());
 		
 		return figurineEntity;
 	}
@@ -165,6 +166,7 @@ public class ProviderConverter
 		figurine.setCost(figurineEntity.getCost());
 		figurine.setImage(figurineEntity.getImage());
 		figurine.setCategory(figurineEntity.getCategory());
+		figurine.setPromotion(figurineEntity.getPromotion());
 		
 		return figurine;
 	}
@@ -176,7 +178,6 @@ public class ProviderConverter
 		commandLineEntity.setIdCommandeLine(commandeLine.getIdCommandeLine());
 		commandLineEntity.setNbFigurine(commandeLine.getNbFigurine());
 		commandLineEntity.setPrizeCommand(commandeLine.getPrizeCommand());
-		commandLineEntity.setPromotion(commandeLine.getPromotion());
 		commandLineEntity.setFigurine(commandeLine.getFigurine());
 		commandLineEntity.setCommand(commandeLine.getCommand());
 		
@@ -189,7 +190,6 @@ public class ProviderConverter
 		commandeLine.setIdCommandeLine(commandLineEntity.getIdCommandeLine());
 		commandeLine.setNbFigurine(commandLineEntity.getNbFigurine());
 		commandeLine.setPrizeCommand(commandLineEntity.getPrizeCommand());
-		commandeLine.setPromotion(commandLineEntity.getPromotion());
 		commandeLine.setFigurine(commandLineEntity.getFigurine());
 		commandeLine.setCommand(commandLineEntity.getCommand());
 		

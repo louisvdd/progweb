@@ -18,8 +18,7 @@ public class Command
 	@Past
 	private Date dateCommand;
 	
-	@JoinColumn(name="user", referencedColumnName="iduser")
-	@ManyToOne
+	@NotNull
 	private User user;
 	
 
