@@ -25,11 +25,6 @@ public class CommandLine
 	@NotNull
 	@Min(0)
 	@Max(1000)
-	private int promotion;
-	
-	@NotNull
-	@Min(0)
-	@Max(1000)
 	private int figurine;
 	
 	@NotNull
@@ -70,16 +65,6 @@ public class CommandLine
 	public void setPrizeCommand(double prizeCommand) 
 	{
 		this.prizeCommand = prizeCommand;
-	}
-
-	public int getPromotion() 
-	{
-		return promotion;
-	}
-
-	public void setPromotion(int promotion) 
-	{
-		this.promotion = promotion;
 	}
 
 	public int getFigurine() 

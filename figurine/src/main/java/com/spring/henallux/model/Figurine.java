@@ -51,6 +51,18 @@ public class Figurine
 	
 	@NotNull
 	private int category;
+	
+	private int promotion; //à changer
+
+	public int getPromotion() 
+	{
+		return promotion;
+	}
+
+	public void setPromotion(int promotion) 
+	{
+		this.promotion = promotion;
+	}
 
 	public String getImage() 
 	{
