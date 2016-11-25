@@ -151,62 +151,62 @@ values(3,"Jeux vidéo",STR_TO_DATE('21-11-2013', '%d-%m-%Y'),"Ubisoft");
 //Création figurines
 //Manga OK
 insert into figurine
-values(1,"Barbe blanche","Un des 4 Yonko, il possède le pouvoir de créer des tremblements de terre",35.30,1000.00,"Naimco",true,55.50,"figurineBarbeBlanche",2,1)     ;
+values(1,"Barbe blanche","Un des 4 Yonko, il possède le pouvoir de créer des tremblements de terre",35.30,1000.00,"Naimco",true,55.50,"figurineBarbeBlanche.png",2,1)     ;
 
 insert into figurine
-values(2,"Griffith","Chef de l'armée des faucons et ancien ami de Guts",40.00,2300.00,"Capcom",true,150.00,"figurineGriffith",2,1);
+values(2,"Griffith","Chef de l'armée des faucons et ancien ami de Guts",40.00,2300.00,"Capcom",true,150.00,"figurineGriffith.png",2,1);
 
 insert into figurine
-values(3,"Guts","Héro du célèbre manga Berserk",26.5,500.00,"Capcom",true,90.90,"figurineGuts",2,2);
+values(3,"Guts","Héro du célèbre manga Berserk",26.5,500.00,"Capcom",true,90.90,"figurineGuts.png",2,2);
 
 insert into figurine
-values(4,"Luffy","Héro du célèbre manga One piece",33.45,500.00,"Naimco",true,35.60,"figurineLuffy",2,2);
+values(4,"Luffy","Héro du célèbre manga One piece",33.45,500.00,"Naimco",true,35.60,"figurineLuffy.png",2,2);
 
 insert into figurine
-values(5,"Naruto","Héro principal du manga du même nom",34.12,3400.5,"Masashi",false,45.10,"figurineNaruto",2,3);
+values(5,"Naruto","Héro principal du manga du même nom",34.12,3400.5,"Masashi",false,45.10,"figurineNaruto.png",2,3);
 
 insert into figurine
-values(6,"Zoro","Une membre de l'équipage de Luffy",45.5,2405.32,"Naimco",true,100.00,"figurineZoro",2,null);
+values(6,"Zoro","Une membre de l'équipage de Luffy",45.5,2405.32,"Naimco",true,100.00,"figurineZoro.png",2,1);
 
 //Film OK
 
 insert into figurine
-values(7,"Batman","Justicier masqué de Gotham city",23.1,3000.0,"DC",true,120.05,"figurineBatman",1,3);
+values(7,"Batman","Justicier masqué de Gotham city",23.1,3000.0,"DC",true,120.05,"figurineBatman.png",1,3);
 
 insert into figurine
-values(8,"Gimli","Un nain compagnon de la communauté de l'anneau",50.9,2000.0,"New line cinema",true,150.24,"figurineGimli",1,null);
+values(8,"Gimli","Un nain compagnon de la communauté de l'anneau",50.9,2000.0,"New line cinema",true,150.24,"figurineGimli.png",1,1);
 
 insert into figurine
-values(9,"Iron Man","Héro du film du même nom",30.0,1000.0,"Disney",true,45.95,"figurineIronMan",1,1);
+values(9,"Iron Man","Héro du film du même nom",30.0,1000.0,"Disney",true,45.95,"figurineIronMan.png",1,1);
 
 insert into figurine
-values(10,"Rey","Héroine de la nouvelle série basé sur Star wars",12.45,2570.50,"Disney",false,74.99,"figurineRey",1,null);
+values(10,"Rey","Héroine de la nouvelle série basé sur Star wars",12.45,2570.50,"Disney",false,74.99,"figurineRey.png",1,1);
 
 insert into figurine
-values(11,"Soldat de l'hiver","ennemi du deuxième film de Captain America",23.00,1700.0,"Disney",true,13.75,"figurineSoldatHiver",1,2);
+values(11,"Soldat de l'hiver","ennemi du deuxième film de Captain America",23.00,1700.0,"Disney",true,13.75,"figurineSoldatHiver.png",1,2);
 
 insert into figurine
-values(12,"Thor","Héro du film du même nom",37.8,2300.0,"Disney",true,5.5,"figurineThor",1,3);
+values(12,"Thor","Héro du film du même nom",37.8,2300.0,"Disney",true,5.5,"figurineThor.png",1,3);
 
 //Jeux vidéo OK
 
 insert into figurine
-values(13,"Portal","Personnage du célèbre jeu du même nom",15.00,1300.0,"Steam",true,10.00,"figurinePortal",3,null);
+values(13,"Portal","Personnage du célèbre jeu du même nom",15.00,1300.0,"Steam",true,10.00,"figurinePortal.png",3,1);
 
 insert into figurine
-values(14,"Arno","Héro du jeu Assissin's creed basé à Paris",30.90,1400.0,"Ubi",true,62.45,"figurineArnoAC",3,1);
+values(14,"Arno","Héro du jeu Assissin's creed basé à Paris",30.90,1400.0,"Ubi",true,62.45,"figurineArnoAC.png",3,1);
 
 insert into figurine
-values(15,"Cloud","Héro de final fantasy VII",47.80,2700.0,"Square Enix",false,97.40,"figurineCloud",3,null);
+values(15,"Cloud","Héro de final fantasy VII",47.80,2700.0,"Square Enix",false,97.40,"figurineCloud.png",3,1);
 
 insert into figurine
-values(16,"Edward","Héro de Assassin's creed dans les caraïbes",23.0,3800.0,"Ubi",true,70.50,"figurineEdwardAC",3,2);
+values(16,"Edward","Héro de Assassin's creed dans les caraïbes",23.0,3800.0,"Ubi",true,70.50,"figurineEdwardAC.png",3,2);
 
 insert into figurine
-values(17,"Ezio","Héro de Assassin's creed basé en Italie",35.67,3400.0,"Ubi",true,60.75,"figurineEzioAC",3,null);
+values(17,"Ezio","Héro de Assassin's creed basé en Italie",35.67,3400.0,"Ubi",true,60.75,"figurineEzioAC.png",3,1);
 
 insert into figurine
-values(18,"Sora","Héro du meilleur jeu du monde, Kingdhom Hearts",50.35,3700.0,"Square Enix",true,250.90,"figurineSora",3,3);
+values(18,"Sora","Héro du meilleur jeu du monde, Kingdhom Hearts",50.35,3700.0,"Square Enix",true,250.90,"figurineSora.png",3,3);
 
 //User OK
 insert into User
