@@ -33,6 +33,7 @@ com\spring\henallux\config\TilesConfig.class
 com\spring\henallux\dataAccess\dao\PromotionDAO.class
 com\spring\henallux\dataAccess\dao\CommandLineDAO.class
 com\spring\henallux\dataAccess\repository\TranslationCategoryRepository.class
+com\spring\henallux\service\CommandsService.class
 com\spring\henallux\service\RegistrationService.class
 com\spring\henallux\controller\UserCommandController.class
 com\spring\henallux\dataAccess\repository\CategoryRepository.class
