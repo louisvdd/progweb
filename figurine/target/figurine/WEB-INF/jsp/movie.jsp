@@ -198,7 +198,7 @@
 				        						<img src="images/movieFigurine/${figurine.image}" alt="" height="400px">
 				        					</div>
 				        					
-				        					<p><spring:message code="description"/> : ${figurine.description}</p>	
+				        					<p class="truncate"><spring:message code="description"/> : ${figurine.description}</p>	
 				        					<p><spring:message code="size"/> : ${figurine.size} cm</p>	
 				        					<p><spring:message code="weight"/> : ${figurine.weight} g</p>	
 				        					<p><spring:message code="brand"/> : ${figurine.brand}</p>	
@@ -215,7 +215,6 @@
 		        					</form:form> 
 		        				</div>
 		        			</div>
-		        			<br>
 	        			</c:forEach> 
 	        		</div>
 	        	</div>
