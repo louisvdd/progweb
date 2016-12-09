@@ -203,7 +203,7 @@
 				        						<h4 class="center-align">
 				        							${figurine.name}
 				        						</h4>
-				        					</div>
+				        					</div> 
 				        					<div class="card-image">
 				        						<img src="images/allFigurine/${figurine.image}" alt="" height="400px">
 				        					</div>
